@@ -65,8 +65,9 @@ h1, h2 {
 
 #benefits, #tips {
     text-align: center;
+    font-weight: 900;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 22px;
     margin: 40px 500px 100px 500px;
     padding: 20px 20px;
 }
@@ -82,3 +83,18 @@ h2 {
 }
 
 #benefits li:before, #tips li:before { content: '\2606'; margin-left: -20px; margin-right: 10px; } 
+
+#img-left{
+    float: left;
+    width: 50%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+#img-right {
+    float: right;
+    right: 0;
+    width: 50%;
+    position: absolute;
+    opacity: 0.4;
+}
