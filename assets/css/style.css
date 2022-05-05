@@ -9,6 +9,7 @@
 body {
     font-family: Lora, sans-serif;
     font-weight: 400;
+    background-color: whitesmoke;
 }
 
 /* header*/
@@ -50,3 +51,34 @@ header h1 {
 .active {
     border-bottom: 1px solid;
 }
+
+h1, h2 {
+    text-align: center;
+    color: #940f0f;
+}
+
+/* Home content */
+
+#motto {
+    line-height: 200px;
+}
+
+#benefits, #tips {
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    margin: 40px 500px 100px 500px;
+    padding: 20px 20px;
+}
+
+h2 {
+    text-align: left;
+}
+
+#benefits li, #tips li {
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+#benefits li:before, #tips li:before { content: '\2606'; margin-left: -20px; margin-right: 10px; } 
