@@ -15,10 +15,9 @@ body {
 /* header*/
 
 header {
-    background-color: #e4e0d3;
+    background: linear-gradient(rgb(111, 245, 205), rgb(27, 131, 108), rgb(111, 245, 205));
     color: #940f0f;
     letter-spacing: 2px;
-
 }
 
 header h1 {
@@ -34,7 +33,7 @@ header h1 {
 
 #menu li {
     display: inline;
-    margin: 100px;
+    margin: 4%;
     font-size: 160%;
     line-height: 40px;
 }
@@ -45,7 +44,7 @@ header h1 {
 }
 
 #menu a:hover {
-    color: rgb(206, 123, 28);
+    color: rgb(71, 15, 161);
 }
 
 .active {
@@ -63,13 +62,37 @@ h1, h2 {
     line-height: 200px;
 }
 
-#benefits, #tips {
+#img-left{
+    float: left;
+    width: 50%;
+    position: relative;
+    opacity: 0.4;
+}
+
+#img-right {
+    float: right;
+    width: 50%;
+    position: relative;
+    opacity: 0.4;
+}
+
+#content {
     text-align: center;
     font-weight: 900;
     line-height: 25px;
     font-size: 22px;
-    margin: 40px 500px 100px 500px;
+    top: 5px;
+    margin: 0 auto;
+    /* padding: 20px 20px; */
+}
+
+#benefits, #tips {
+    position: absolute;
     padding: 20px 20px;
+}
+
+#tips {
+    top: 60%;
 }
 
 h2 {
@@ -84,17 +107,27 @@ h2 {
 
 #benefits li:before, #tips li:before { content: '\2606'; margin-left: -20px; margin-right: 10px; } 
 
-#img-left{
-    float: left;
-    width: 50%;
-    position: absolute;
-    opacity: 0.4;
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    #content {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+        float: left;
+        font-size: 10px;
+    }
+
 }
 
-#img-right {
-    float: right;
-    right: 0;
-    width: 50%;
-    position: absolute;
-    opacity: 0.4;
+@media screen and (max-width: 950px) {
+    #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
 }
