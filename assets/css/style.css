@@ -51,7 +51,7 @@ header h1 {
     border-bottom: 1px solid;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     color: #940f0f;
 }
@@ -59,10 +59,9 @@ h1, h2 {
 /* Home content */
 
 #motto {
-    line-height: 500px;
-    background-image: url(../images/pexels-karolina-grabowska-4498294.jpg);
+    line-height: 50vh;
+    background-image: url(../images/pexels-karolina-grabowska.jpg);
     background-size: 100% 100%;
-    color: #fafafa;
 }
 
 #motto-title{
@@ -78,50 +77,48 @@ h1, h2 {
     border-radius: 50px;
 }
 
-#img-left{
-    float: left;
-    width: 50%;
-    position: relative;
-    opacity: 0.4;
-}
-
-#img-right {
-    float: right;
-    width: 50%;
-    position: relative;
-    opacity: 0.4;
-}
-
-#content {
+#benefits, #tips{
+    text-align: center;
     font-weight: 900;
-    line-height: 25px;
-    font-size: 22px;
-    top: 5px;
-    margin: 0 auto;
+    line-height: 60px;
+    font-size: 40px;
+    letter-spacing: 2px;
 }
 
-#benefits, #tips {
-    margin: 10px 20% 10px 20% ;
-    position: absolute;
-    padding: 20px 20px;
-    display: block;
+#benefits {
+    margin: 50% 20%;
+    color: rgb(215, 205, 231);
+    background-color: #f551519f;
 }
 
 #tips {
-    clear: both;
-    top: 90%;
+    margin: 30% 20%;
+    color: rgb(215, 205, 231);
+    background-color: rgba(71, 15, 161, 0.651);
 }
 
-h2 {
-    text-align: left;
+.content-left{
+    float: left;
+    background: url(../images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) no-repeat center center / cover;
 }
+
+.content-right {
+    float: right;
+    background: url(../images/tyler-nix-Y1drF0Y3Oe0-unsplash.jpg) no-repeat center center / cover;
+}
+
+.content-left, .content-right {
+    width: 50%;
+    height: 150vh;
+    border-radius: 15%;
+}
+
 
 #benefits li, #tips li {
     list-style-type: none;
-    text-align: left;  
 }
 
-#benefits li:before, #tips li:before { content: '\2606'; margin-left: -20px; margin-right: 10px; } 
+#benefits li:before, #tips li:before { content: '\2606'; margin-right: 20px; } 
 
 /* Media queries */
 
