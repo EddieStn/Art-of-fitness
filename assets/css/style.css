@@ -72,11 +72,9 @@ h1, h2 {
     padding: 5px 10px;
     margin: 25%;
     display: inline;
-    left: 25%;
-    /* width: 50%; */
     font-size: 40px;
-    background-color: #fafafaa8;
-    border: 1px solid;
+    color: rgb(71, 15, 161);
+    background-color: #85ffe1a8;
     border-radius: 50px;
 }
 
@@ -95,22 +93,23 @@ h1, h2 {
 }
 
 #content {
-    text-align: center;
     font-weight: 900;
     line-height: 25px;
     font-size: 22px;
     top: 5px;
     margin: 0 auto;
-    /* padding: 20px 20px; */
 }
 
 #benefits, #tips {
-    position: relative;
+    margin: 10px 20% 10px 20% ;
+    position: absolute;
     padding: 20px 20px;
+    display: block;
 }
 
 #tips {
-    float: right;
+    clear: both;
+    top: 90%;
 }
 
 h2 {
