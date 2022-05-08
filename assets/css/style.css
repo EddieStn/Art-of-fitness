@@ -7,41 +7,48 @@
 }
 
 body {
-    font-family: Lora, sans-serif;
+    font-family: Lora, Oxygen, sans-serif;
     font-weight: 400;
+    color: #940f0f;
     background-color: whitesmoke;
 }
 
 /* header*/
 
 header {
-    background: linear-gradient(rgb(111, 245, 205), rgb(27, 131, 108), rgb(111, 245, 205));
-    color: #940f0f;
-    letter-spacing: 2px;
+    background: linear-gradient(rgb(114, 238, 201), rgb(241, 255, 252), rgb(241, 255, 252), rgb(114, 238, 201));
+    letter-spacing: 3px;
 }
 
-header h1 {
-    text-align: center;
-    font-size: 250%;
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    text-align: left;
+    font-size: 300%;
+    margin-left: 20px;
+    display: inline;
+}
+
+#logo, #menu {
+    line-height: 80px;
 }
 
 /* Navigation links */
 
-#menu ul {
-    text-align: center;
+#menu {
+    font-size: 140%;
+    float: right;
 }
 
 #menu li {
     display: inline;
-    margin: 4%;
-    font-size: 160%;
-    line-height: 40px;
+    margin-right: 50px;
+    list-style-type: none;
 }
 
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
 
 #menu a:hover {
     color: rgb(71, 15, 161);
@@ -51,29 +58,33 @@ header h1 {
     border-bottom: 1px solid;
 }
 
-h1 {
-    text-align: center;
-    color: #940f0f;
-}
-
 /* Home content */
 
-#motto {
-    line-height: 50vh;
-    background-image: url(../images/pexels-karolina-grabowska.jpg);
+#hero-outer {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+#hero-image {
+    height: 500px;
+    background: url(../images/pexels-karolina-grabowska.jpg) no-repeat center center;
     background-size: 100% 100%;
 }
 
-#motto-title{
-    text-align: center;
-    line-height: 55px;
+#motto{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 50px;
+    left: 25%; 
+    right: 25%; 
+    letter-spacing: 3px;
     text-transform: capitalize;
     padding: 5px 10px;
-    margin: 25%;
-    display: inline;
-    font-size: 40px;
+    font-size: 170%;
     color: rgb(71, 15, 161);
-    background-color: #85ffe1a8;
+    background-color: rgba(114, 238, 201, 0.5);
     border-radius: 50px;
 }
 
