@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    font-family: Lora, Oxygen, sans-serif;
+    font-weight: 400;
+    color: #940f0f;
+    background-color: whitesmoke;
+}
+header {
+    background: linear-gradient(rgb(114, 238, 201), rgb(241, 255, 252), rgb(241, 255, 252), rgb(114, 238, 201));
+    letter-spacing: 3px;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+#logo {
+    /* text-align: left; */
+    font-size: 300%;
+    margin-left: 20px;
+    /* display: flex; */
+    /* justify-content: left; */
+    /* align-items: center; */
+}
+
+#logo,
+#menu {
+    /* line-height: 60px; */
+} 
+
+#menu {
+    font-size: 110%;
+     /* float: right;  */
+} 
+
+#menu li {
+    grid-column: 4 / 6;
+    display: inline;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+#menu a:hover {
+    color: rgb(71, 15, 161);
+}
+
+.active {
+    border-bottom: 1px solid;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header"
+        ". hero hero hero hero ."
+        "container container container container container container"
+        "footer footer footer footer footer footer";
+    grid-template-columns: 10em, 1fr, 1fr, 1fr, 1fr, 10em;
+    grid-template-rows: auto;
+    
+}
+header {
+    grid-area: header;
+    grid-column: 1 / 7;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.container {
+    grid-area: container;
+}
+
+footer {
+    grid-area: footer;
+}
+#menu {
+    grid-area: header;
+    grid-column: 3/7;
+    
+}

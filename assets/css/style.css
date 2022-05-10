@@ -198,25 +198,12 @@ header a {
     margin-right: 20px;
 }
 
-/* Media queries */
+/* footer */
 
-@media screen and (max-width: 1200px) {
-    #content {
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
-        float: left;
-        font-size: 10px;
-    }
-
-}
-
-@media screen and (max-width: 950px) {
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
+footer {
+    display: grid;
+    grid-template-areas: 'footer footer';
+    grid-row: footer;
+    grid-column: footer;
+    align-items: end
 }
