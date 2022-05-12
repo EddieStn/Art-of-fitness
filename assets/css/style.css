@@ -18,8 +18,9 @@ body {
 
 header {
     background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    grid-area: header;
+    opacity: .8;
     letter-spacing: 3px;
-    text-align: center;
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -93,70 +94,67 @@ nav a {
     border-bottom: 1px dotted;
 }
 
-/* 
+/* ***************************** */
+/* body styling starts here  */
+/* ***************************** */
+
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header header header header"
         ". hero hero hero hero ."
-        "container container container container container container"
+        ". container container container container ."
         "footer footer footer footer footer footer";
-    grid-template-columns: 10em, 1fr, 1fr, 1fr, 1fr, 10em;
-    grid-template-rows: auto;
+    grid-template-columns: 5em 1fr 1fr 1fr 1fr 5em;
+    grid-template-rows: minmax(10em, 50em) max-content auto 1fr ;
     
 }
-header {
-    grid-area: header;
-    grid-column: 1 / 7;
-}
+
+/* hero */
 
 .hero {
+    background: url(../images/pexels-karolina-grabowska.jpg) no-repeat center center / cover;
     grid-area: hero;
+    grid-row: auto;
 }
 
-.container {
-    grid-area: container;
-}
-
-footer {
-    grid-area: footer;
-}
-#menu {
+header {
     grid-area: header;
-    grid-column: 3/7;
-    
-} */
-
-
-/* Home content */
-
-#hero-outer {
-    position: relative;
-    height: 500px;
-    width: 100%;
 }
 
-#hero-image {
-    height: 500px;
-    background: url(../images/pexels-karolina-grabowska.jpg) no-repeat center center;
-    background-size: 100% 100%;
-}
-
-#motto {
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    top: 50px;
-    left: 25%;
-    right: 25%;
+.motto {
+    /* display: flex; */
+    /* justify-content: center; */
+    z-index: 11;
+    /* align-self: center; */
     letter-spacing: 3px;
     text-transform: capitalize;
     padding: 5px 10px;
-    font-size: 170%;
+    /* font-size: 170%; */
     color: rgb(71, 15, 161);
     background-color: rgba(114, 238, 201, 0.5);
     border-radius: 50px;
 }
+
+.home-container {
+    grid-area: container;
+
+}
+
+.home-container-left {
+    background: url(../images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) no-repeat center center / cover;
+}
+
+.home-container-right {
+    background: url(../images/tyler-nix-Y1drF0Y3Oe0-unsplash.jpg) no-repeat center center / cover;
+}
+
+
+
+
+/* Home content */
+
+
 
 #benefits,
 #tips {
@@ -179,10 +177,6 @@ footer {
     position: absolute;
     top: 0;
     left: 100%;
-    /* margin-top: -30px; */
-    /* approx adjustment for arrow */
-    /* margin-left: 25px; */
-    /* approx adjustment for arrow */
 }
 
 .popup a:hover+div {
@@ -232,23 +226,6 @@ footer {
     background-color: rgba(71, 15, 161, 0.6);
 }
 
-.content-left {
-    float: left;
-    background: url(../images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) no-repeat center center / cover;
-}
-
-.content-right {
-    float: right;
-    background: url(../images/tyler-nix-Y1drF0Y3Oe0-unsplash.jpg) no-repeat center center / cover;
-}
-
-.content-left,
-.content-right {
-    width: 50%;
-    height: 150vh;
-    border-radius: 15%;
-}
-
 #benefits p,
 #tips p {
     font-size: 18px;
@@ -269,6 +246,29 @@ footer {
 
 /* footer */
 
+footer {
+    width: 100%;
+    grid-area: footer;
+    line-height: 4em;
+    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
+}
+
+footer ul {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer a {
+    line-height: 4em;
+    font-size: 1.5rem;
+    margin: .5em;
+    text-decoration: none;
+}
 
 /* *********************** */
 /* @media styles start here */

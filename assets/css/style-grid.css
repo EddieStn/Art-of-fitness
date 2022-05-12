@@ -19,7 +19,8 @@ body {
 header {
     background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
     letter-spacing: 3px;
-    text-align: center;
+    grid-area: header;
+    opacity: 0.5;
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -108,16 +109,19 @@ body {
     grid-template-rows: minmax(10em, 50em) max-content auto 1fr ;
 }
 
+
 .hero {
-    background-color: red;
-    display: grid;
+    background-color: rgb(240, 180, 180);
     grid-area: hero;
+    justify-content: center;
     grid-row: auto;
-     
 }
 
 .hero-box {
-
+    border-radius: 1px solid black;
+    margin: 20px;
+    grid-column: auto;
+    justify-items: center;
 }
 
 .container h2 {
@@ -129,10 +133,10 @@ body {
 }
 
 .workouts {
-    display: grid;
+    /* display: grid; */
     grid-column: auto;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
 }
 
 footer {
