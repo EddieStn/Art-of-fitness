@@ -17,7 +17,7 @@ body {
 /* ***************************** */
 
 header {
-    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
     letter-spacing: 3px;
     text-align: center;
     position: fixed;
@@ -60,7 +60,6 @@ nav li {
 nav a {
     color: inherit;
     text-decoration: none;
-    font-size: 1.2rem;
     opacity: 0;
     transition: opacity 100ms ease-in-out;
 }
@@ -103,33 +102,63 @@ body {
     grid-template-areas: 
         "header header header header header header"
         ". hero hero hero hero ."
-        "container container container container container container"
+        ". container container container container ."
         "footer footer footer footer footer footer";
-    grid-template-columns: 10em, 1fr, 1fr, 1fr, 1fr, 10em;
-    grid-template-rows: auto;
-    
-}
-header {
-    grid-area: header;
-    grid-column: 1 / 7;
+    grid-template-columns: 5em 1fr 1fr 1fr 1fr 5em;
+    grid-template-rows: minmax(10em, 50em) max-content auto 1fr ;
 }
 
 .hero {
+    background-color: red;
+    display: grid;
     grid-area: hero;
+    grid-row: auto;
+     
 }
 
+.hero-box {
+
+}
+
+.container h2 {
+    text-align: center;
+}
 .container {
     grid-area: container;
+    background-color: cyan;
+}
+
+.workouts {
+    display: grid;
+    grid-column: auto;
+    justify-content: center;
+    width: 100%;
 }
 
 footer {
+    width: 100%;
     grid-area: footer;
+    line-height: 4em;
+    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
 }
-#menu {
-    grid-area: header;
-    grid-column: 3/7;
-    
+
+footer ul {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
+
+footer a {
+    line-height: 4em;
+    font-size: 1.5rem;
+    margin: .5em;
+    text-decoration: none;
+}
+
 
 /* *********************** */
 /* @media styles start here */
