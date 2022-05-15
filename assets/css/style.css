@@ -17,36 +17,78 @@ body {
     grid-template:
         "header header header" 3em
         "hero hero hero" 70vh
-        ". contents ." 6em
+        ". table ." 10em
         ". motivation ." auto
         ". benefits ." auto
         ". tips ." auto
         "footer footer footer" 6em
         / 1fr minmax(25em, 5fr) 1fr;
-    
+    gap: 1em;
 }
 
-header {
-    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
-    grid-area: header;
-    opacity: .8;
-    letter-spacing: 3px;
-    position: relative;
-    width: 100%;
-}
 
 .hero {
     background: url(../images/pexels-karolina-grabowska-4498294.jpg) no-repeat center center / cover;
     grid-area: hero;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-
-.contents {
-    grid-area: contents;
+.motto {
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    font-size: 170%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(114, 238, 201, 0.6);
+    border-radius: 50px;
 }
+
+.table {
+    grid-area: table;
+    background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
+    background-color: rgb(187, 187, 187);
+    border: 10px solid rgb(175, 59, 59);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.table h2 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: Oxygen, sans-serif;
+    font-weight: 700;
+    background-color: rgb(96, 235, 228);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: .6em;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #940f0f;
+}
+
 
 .benefits {
     background: url(../images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) no-repeat center center / cover;
@@ -70,6 +112,14 @@ footer {
 /* ***************************** */
 /* logo and navigation styles start here  */
 /* ***************************** */
+
+header {
+    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    grid-area: header;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+}
 
 .logo {
     color: #940f0f;
@@ -150,18 +200,7 @@ nav a {
 
 
 
-.motto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    padding: 5px 10px;
-    font-size: 170%;
-    color: rgb(71, 15, 161);
-    background-color: rgba(114, 238, 201, 0.5);
-    border-radius: 50px;
-}
+
 
 .home-container {
     display: grid;

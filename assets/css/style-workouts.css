@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Lora, Oxygen, sans-serif;
+    font-weight: 400;
+    color: #940f0f;
+    background-color: rgb(245, 245, 245);
+
+    display: grid;
+    grid-template:
+        "header header header" 5em
+        ". table ." 25em
+        ". muscle-groups ." auto
+        ". full-body ." auto
+        "footer footer footer" 6em
+        / 1fr minmax(25em, 5fr) 1fr;
+    gap: 2em;
+}
+
+
+.table {
+    grid-area: table;
+    background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
+    background-color: rgb(187, 187, 187);
+    border: 10px solid rgb(175, 59, 59);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+
+.table h2 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: Oxygen, sans-serif;
+    font-weight: 700;
+    background-color: rgb(96, 235, 228);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: .6em;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #940f0f;
+}
+
+.muscle-groups {
+    grid-area: muscle-groups;
+}
+
+.full-body {
+    grid-area: full-body;
+}
+
+
+/* ***************************** */
+/* logo and navigation styles start here  */
+/* ***************************** */
+
+header {
+    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    grid-area: header;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    color: #940f0f;
+    display: flex;
+    align-items: left;
+    margin-left: 1em;
+    line-height: 5em;
+    width: max-content;
+}
+
+nav {
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: rgb(150, 255, 223);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 250ms ease-in-out;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-weight: 500;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 150ms;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 1px dotted;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    grid-area: footer;
+    line-height: 4em;
+    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
+}
+
+footer ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    line-height: 4em;
+    font-size: 1.5rem;
+    margin: .8em;
+}
+
+/* *********************** */
+/* @media styles start here */
+/* *********************** */
+
+@media screen and (min-width: 950px) {
+
+    /* styles for laptop/desktop */
+
+    /* header */
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns:1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 1 / 2;
+        line-height: 4em;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav li {
+        margin-left: 2em;
+        margin-bottom: 0;
+    }
+
+    nav a:hover {
+        color: rgb(71, 15, 161);
+    }
+
+    nav a::before {
+        content: '';
+        height: 3px;
+        background: rgb(71, 15, 161);
+        position: absolute;
+        top: -.3em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+}
