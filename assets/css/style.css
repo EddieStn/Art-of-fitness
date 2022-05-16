@@ -7,6 +7,12 @@
     border: none;
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 body {
     font-family: Lora, Oxygen, sans-serif;
     font-weight: 400;
@@ -34,14 +40,18 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+
 .motto {
     text-align: center;
     letter-spacing: 3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 5px 10px;
     font-size: 170%;
-    color: rgb(0, 0, 0);
-    background-color: rgba(114, 238, 201, 0.6);
+    font-weight: 900;
+    color: #940f0f;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: #333 0 4px 4px 4px;
     border-radius: 50px;
 }
 
@@ -91,22 +101,57 @@ button:hover {
 
 
 .benefits {
-    background: url(../images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) no-repeat center center / cover;
     grid-area: benefits;
 }
 
 .tips {
-    background: url(../images/tyler-nix-Y1drF0Y3Oe0-unsplash.jpg) no-repeat center center / cover;
     grid-area: tips;
 }
 
 .motivation {
     grid-area: motivation;
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
 }
 
-footer {
-    grid-area: footer;
+.stacked {
+    display: grid;
 }
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.quote-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.quote {
+    aspect-ratio: 1 / 1.5;
+    /* border: 3px solid hotpink; */
+}
+
+.quote-content {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    align-self: end;
+    font-weight: 900;
+    font-size: 1.1em;
+    margin: 1rem 1rem 4rem;
+    padding: 0.5rem;
+    box-shadow: .5em .5rem 1rem rgb(0 0 0 / 0.4);
+}
+
+.quote-image {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+  }
+
 
 
 /* ***************************** */
@@ -119,6 +164,7 @@ header {
     letter-spacing: 3px;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 .logo {
@@ -195,29 +241,6 @@ nav a {
 
 
 
-
-/* hero */
-
-
-
-
-
-.home-container {
-    display: grid;
-    grid-area: container;
-    grid-auto-flow: row;
-    gap: 1em;
-
-}
-
-
-
-
-
-/* Home content */
-
-
-
 .popup {
     position: relative;
 }
@@ -272,7 +295,6 @@ nav a {
     /* line-height: 60px; */
     /* font-size: 40px; */
     letter-spacing: 2px;
-    margin: 50% 20%;
     color: rgb(215, 205, 231);
     background-color: rgba(71, 15, 161, 0.6);
 }
