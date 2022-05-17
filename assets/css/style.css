@@ -16,8 +16,8 @@ picture {
 body {
     font-family: Lora, Oxygen, sans-serif;
     font-weight: 400;
-    color: #940f0f;
-    background-color: whitesmoke;
+    color: rgb(104, 11, 11);
+    background-color: rgb(185, 185, 185);
 
     display: grid;
     grid-template:
@@ -31,6 +31,90 @@ body {
         / 1fr minmax(25em, 5fr) 1fr;
     gap: 1em;
 }
+/* ***************************** */
+/* Header, logo and navigation styles start here  */
+/* ***************************** */
+
+header {
+    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    grid-area: header;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    color: #940f0f;
+    font-weight: 100;
+    display: flex;
+    align-items: left;
+    text-decoration: none;
+    margin-left: 1em;
+    line-height: 3em;
+    width: max-content;
+}
+
+nav {
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: rgb(150, 255, 223);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 250ms ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-weight: 500;
+}
+
+nav a {
+    color: #940f0f;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 150ms;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 1px dotted;
+}
+
+/* ***************************** */
+/* Hero styling starts here  */
+/* ***************************** */
 
 
 .hero {
@@ -40,7 +124,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
 
 .motto {
     text-align: center;
@@ -88,7 +171,8 @@ button {
     cursor: pointer;
     font-family: Oxygen, sans-serif;
     font-weight: 700;
-    background-color: rgb(96, 235, 228);
+    background-color: rgb(104, 11, 11);
+    color: #FFF;
     border-radius: 10px;
     font-size: 1.3rem;
     padding: .6em;
@@ -96,9 +180,8 @@ button {
 
 button:hover {
     background-color: #fff;
-    color: #940f0f;
+    color: rgb(104, 11, 11);
 }
-
 
 .benefits {
     grid-area: benefits;
@@ -107,6 +190,10 @@ button:hover {
 .tips {
     grid-area: tips;
 }
+
+/* ***************************** */
+/* Motivation styling starts here  */
+/* ***************************** */
 
 .motivation {
     grid-area: motivation;
@@ -132,7 +219,6 @@ button:hover {
 
 .quote {
     aspect-ratio: 1 / 1.5;
-    /* border: 3px solid hotpink; */
 }
 
 .quote-content {
@@ -152,172 +238,77 @@ button:hover {
     object-fit: cover;
   }
 
-
-
 /* ***************************** */
-/* logo and navigation styles start here  */
+/* Benefits and Tips styling starts here  */
 /* ***************************** */
 
-header {
-    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
-    grid-area: header;
-    letter-spacing: 3px;
-    position: fixed;
+.collapsible {
+    background-color: rgb(104, 11, 11);
+    color: white;
+    cursor: pointer;
+    padding: 1em 1em 1em 4em;
     width: 100%;
-    z-index: 999;
-}
-
-.logo {
-    color: #940f0f;
-    font-weight: 100;
-    display: flex;
-    align-items: left;
-    text-decoration: none;
-    margin-left: 1em;
-    line-height: 3em;
-    width: max-content;
-}
-
-nav {
-    position: absolute;
-    text-align: right;
-    top: 100%;
-    right: 0;
-    background: rgb(150, 255, 223);
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 250ms ease-in-out;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    margin-bottom: 1em;
-    margin-right: 1em;
-    font-weight: 500;
-}
-
-nav a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1.2rem;
-    opacity: 0;
-    transition: opacity 100ms ease-in-out;
-}
-
-.nav-toggle:checked ~ nav {
-    transform: scale(1, 1);
-}
-
-.nav-toggle:checked ~ nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 150ms;
-}
-
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.active {
-    border-bottom: 1px dotted;
-}
-
-/* ***************************** */
-/* body styling starts here  */
-/* ***************************** */
-
-
-
-.popup {
-    position: relative;
-}
-
-.popup div {
-    /*visiblity: hidden; */
-    
-    display: none;
-    position: absolute;
-    top: 0;
-    /* left: 100%; */
-}
-
-.popup a:hover+div {
-    cursor: pointer;
-    display: block;
-    /*visibility: visible; */
-    width: 180px;
-    line-height: 25px;
-    padding: 8px;
-    font-size: 20px;
-    text-align: center;
-    z-index: 1;
-    color: rgb(71, 15, 161);
-    background: rgb(114, 238, 201);
-    border-radius: 5px;
-    text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
-    box-shadow: #333 -4px 4px 16px 2px;
-    -webkit-transition: opacity 100ms ease-in;
-    -o-transition: opacity 100ms ease-in;
-    -moz-transition: opacity 100ms ease-in;
-    transition: opacity 100ms ease-in;
-    pointer-events: none;
-}
-
-.popup div:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #FFFFFF transparent transparent;
-    top: 22px;
-    left: -23px;
-}
-
-#benefits-box,
-#tips-box {
-    text-align: center;
-    font-weight: 900;
-    /* line-height: 60px; */
-    /* font-size: 40px; */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3rem;
     letter-spacing: 2px;
-    color: rgb(215, 205, 231);
-    background-color: rgba(71, 15, 161, 0.6);
+}
+  
+.open, .collapsible:hover {
+    background-color: rgb(122, 17, 17);
+    color: #fff;
+}
+  
+.content {
+    margin: .2em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-out;
 }
 
-#benefits-box p,
-#tips-box p {
-    font-size: 18px;
+.content p {
+    margin-left: .5em;
+    padding: .5em;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-#benefits-box li,
-#tips-box li {
-    text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
-    font-family: Oxygen, sans-serif;
-    list-style-type: none;
-}
 
-#benefits-box li:before,
-#tips-box li:before {
+.collapsible:before {
     content: '\2606';
-    margin-right: 20px;
+    margin-right: .6em;
 }
 
-/* footer */
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.1rem;
+    color: #FFF;
+    float: right;
+    margin-left: 5px;
+
+}
+  
+.open:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.benefits h2,
+.tips h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: .7em;
+    padding: .67em;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: #333 0 10px 10px 10px;
+}
+
+/* ***************************** */
+/* Footer styling starts here */
+/* ***************************** */
 
 footer {
     width: 100%;
@@ -407,5 +398,12 @@ footer a {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+
+    .quote-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    
 
 }
