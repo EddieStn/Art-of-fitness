@@ -7,6 +7,20 @@
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
+
 img,
 picture {
   max-width: 100%;
@@ -49,7 +63,6 @@ header {
     font-weight: 100;
     display: flex;
     align-items: left;
-    text-decoration: none;
     margin-left: 1em;
     line-height: 3em;
     width: max-content;
@@ -66,10 +79,6 @@ nav {
     transition: transform 250ms ease-in-out;
 }
 
-nav ul {
-    list-style: none;
-}
-
 nav li {
     margin-bottom: 1em;
     margin-right: 1em;
@@ -78,7 +87,6 @@ nav li {
 
 nav a {
     color: #940f0f;
-    text-decoration: none;
     font-size: 1.2rem;
     opacity: 0;
     transition: opacity 100ms ease-in-out;
@@ -142,8 +150,7 @@ nav a {
     grid-area: table;
     background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
     background-color: rgb(187, 187, 187);
-    border: 10px solid rgb(175, 59, 59);
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
     display: flex;
     align-items: center;
     position: relative;
@@ -159,12 +166,11 @@ nav a {
 
 .table h2 {
     position: absolute;
-    text-align: center;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #FFFFFF;
     border-radius: inherit;
+    padding: .2em;
 }
 
 button {
@@ -181,14 +187,6 @@ button {
 button:hover {
     background-color: #fff;
     color: rgb(104, 11, 11);
-}
-
-.benefits {
-    grid-area: benefits;
-}
-
-.tips {
-    grid-area: tips;
 }
 
 /* ***************************** */
@@ -244,6 +242,25 @@ button:hover {
 /* Benefits and Tips styling starts here  */
 /* ***************************** */
 
+.benefits {
+    grid-area: benefits;
+    margin-bottom: 5em;
+}
+
+.tips {
+    grid-area: tips;
+    margin-bottom: 5em;
+}
+
+.benefits h2,
+.tips h2 {
+    font-size: 2rem;
+    margin: .7em;
+    padding: .67em;
+    border-radius: 50%;
+    box-shadow: #333 0 10px 10px 10px;
+}
+
 .collapsible {
     background-color: rgb(104, 11, 11);
     color: white;
@@ -272,9 +289,9 @@ button:hover {
 
 .content p {
     margin-left: .5em;
-    padding: .5em;
-    font-size: 1.1rem;
-    font-weight: 600;
+    padding: .4em;
+    font-size: 1.2rem;
+    font-family: Oxygen, sans-serif;
 }
 
 
@@ -296,18 +313,6 @@ button:hover {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-.benefits h2,
-.tips h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 2rem;
-    margin: .7em;
-    padding: .67em;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: #333 0 10px 10px 10px;
-}
-
 /* ***************************** */
 /* Footer styling starts here */
 /* ***************************** */
@@ -323,14 +328,12 @@ footer ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
 footer a {
     line-height: 4em;
     font-size: 1.5rem;
     margin: .8em;
-    text-decoration: none;
 }
 
 /* *********************** */
@@ -413,6 +416,16 @@ footer a {
 
     .quote-content {
         margin: 1rem 1rem 11rem;
+    }
+
+    footer li {
+        margin: 0 2em;
+        transform: scale(1, 1);
+        transition: transform ease-in-out 150ms;
+    }
+
+    footer li:hover {
+        transform: scale(2, 2)
     }
     
 }

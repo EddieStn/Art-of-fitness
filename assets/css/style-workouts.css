@@ -7,6 +7,7 @@
     border: none;
     letter-spacing: 2px;
 }
+
 a {
     text-decoration: none;
 }
@@ -15,11 +16,23 @@ ul {
     list-style: none;
 }
 
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 body {
     font-family: Lora, Oxygen, sans-serif;
     font-weight: 400;
-    color: #940f0f;
-    background-color: rgb(245, 245, 245);
+    color: rgb(104, 11, 11);
+    background-color: rgb(185, 185, 185);
 
     display: grid;
     grid-template:
@@ -37,8 +50,7 @@ body {
     grid-area: table;
     background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
     background-color: rgb(187, 187, 187);
-    border: 10px solid rgb(175, 59, 59);
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
     display: flex;
     align-items: center;
     position: relative;
@@ -52,22 +64,21 @@ body {
     gap: 1em;
 }
 
-
 .table h2 {
     position: absolute;
-    text-align: center;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #FFFFFF;
     border-radius: inherit;
+    padding: .2em;
 }
 
 button {
     cursor: pointer;
     font-family: Oxygen, sans-serif;
     font-weight: 700;
-    background-color: rgb(96, 235, 228);
+    background-color: rgb(104, 11, 11);
+    color: #FFF;
     border-radius: 10px;
     font-size: 1.3rem;
     padding: .6em;
@@ -75,7 +86,7 @@ button {
 
 button:hover {
     background-color: #fff;
-    color: #940f0f;
+    color: rgb(104, 11, 11);
 }
 
 .muscle-groups {
@@ -127,7 +138,7 @@ nav li {
 }
 
 nav a {
-    color: inherit;
+    color: #940f0f;
     font-size: 1.2rem;
     opacity: 0;
     transition: opacity 100ms ease-in-out;
