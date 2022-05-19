@@ -38,6 +38,7 @@ body {
     grid-template:
         "header header header" 5em
         ". table ." 25em
+        ". box ." auto
         ". muscle-groups ." auto
         ". full-body ." auto
         "footer footer footer" 6em
@@ -45,6 +46,18 @@ body {
     gap: 2em;
 }
 
+.box {
+    grid-area: box;
+}
+
+.box p {
+    background-color: #fff;
+    padding: 1em;
+}
+
+iframe {
+    margin-top: 1em;
+}
 
 .table {
     grid-area: table;
