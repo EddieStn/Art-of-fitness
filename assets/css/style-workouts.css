@@ -59,6 +59,11 @@ iframe {
     margin-top: 1em;
 }
 
+h3 {
+    text-align: center;
+    margin: 1em;
+}
+
 .table {
     grid-area: table;
     background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
@@ -104,6 +109,7 @@ button:hover {
 
 .muscle-groups {
     grid-area: muscle-groups;
+    align-items: center;
 }
 
 .full-body {
