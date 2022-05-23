@@ -52,7 +52,6 @@ body {
         ". table ." 25em
         ". box ." auto
         ". perfect-workouts ." auto
-        ". full-body ." auto
         "footer footer footer" 6em
         / 1fr minmax(25em, 5fr) 1fr;
     gap: 2em;
@@ -138,12 +137,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: #680b0b 0 3px 5px 2px;
 }
-
-
-.full-body {
-    grid-area: full-body;
-}
-
 
 /* ***************************** */
 /* logo and navigation styles start here  */
