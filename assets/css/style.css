@@ -15,27 +15,30 @@ ul {
     list-style: none;
 }
 
+h1, h2 {
+    font-family: Lora, sans-serif;
+}
+
 h2 {
     text-align: center;
     letter-spacing: 2px;
     background-color: #fff;
 }
 
-img,
-picture {
+img, picture {
   max-width: 100%;
   display: block;
 }
 
 body {
-    font-family: Lora, Oxygen, sans-serif;
+    font-family: Oxygen, sans-serif;
     font-weight: 400;
-    color: rgb(104, 11, 11);
-    background-color: rgb(185, 185, 185);
+    color: #680b0b;
+    background-color: #b9b9b9;
 
     display: grid;
     grid-template:
-        "header header header" 3em
+        "header header header" 5em
         "hero hero hero" 70vh
         ". table ." 10em
         ". motivation ." auto
@@ -50,10 +53,10 @@ body {
 /* ***************************** */
 
 header {
-    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    background: linear-gradient(#40e0d0, #ffffff, #ffffff, #40e0d0);
     grid-area: header;
     letter-spacing: 3px;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 999;
 }
@@ -64,7 +67,7 @@ header {
     display: flex;
     align-items: left;
     margin-left: 1em;
-    line-height: 3em;
+    line-height: 5em;
     width: max-content;
 }
 
@@ -73,7 +76,7 @@ nav {
     text-align: right;
     top: 100%;
     right: 0;
-    background: rgb(150, 255, 223);
+    background: #40e0d0;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 250ms ease-in-out;
@@ -83,6 +86,7 @@ nav li {
     margin-bottom: 1em;
     margin-right: 1em;
     font-weight: 500;
+    padding-inline: 10px;
 }
 
 nav a {
@@ -131,6 +135,8 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: 5px;
+    margin-top: -1em;
 }
 
 .motto {
@@ -140,21 +146,26 @@ nav a {
     padding: 5px 10px;
     font-size: 170%;
     font-weight: 900;
-    color: #940f0f;
+    color: #680b0b;
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: #333 0 4px 4px 4px;
+    box-shadow: #333 0 5px 10px 2px;
     border-radius: 50px;
 }
+
+/* ************************************** */
+/* Table of contents styling starts here  */
+/* ************************************** */
 
 .table {
     grid-area: table;
     background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
-    background-color: rgb(187, 187, 187);
+    background-color: #b9b9b9;
     border-radius: 0 0 30px 30px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-around;
+    box-shadow: #333 0 5px 10px 5px;
 }
 
 .btn {
@@ -175,9 +186,8 @@ nav a {
 
 button {
     cursor: pointer;
-    font-family: Oxygen, sans-serif;
     font-weight: 700;
-    background-color: rgb(104, 11, 11);
+    background-color: #680b0b;
     color: #FFF;
     border-radius: 10px;
     font-size: 1.3rem;
@@ -186,7 +196,7 @@ button {
 
 button:hover {
     background-color: #fff;
-    color: rgb(104, 11, 11);
+    color: #680b0b;
 }
 
 /* ***************************** */
@@ -252,8 +262,7 @@ button:hover {
     margin-bottom: 5em;
 }
 
-.benefits h2,
-.tips h2 {
+.sub-title {
     font-size: 2rem;
     margin: .7em;
     padding: .67em;
@@ -291,7 +300,6 @@ button:hover {
     margin-left: .5em;
     padding: .4em;
     font-size: 1.2rem;
-    font-family: Oxygen, sans-serif;
 }
 
 
@@ -314,6 +322,34 @@ button:hover {
 }
 
 /* ***************************** */
+/* Arrow up styling starts here */
+/* ***************************** */
+
+
+.gototop {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 10;
+}
+
+.gototop a {
+    height: 36px;
+    width: 36px;
+    display: block;
+    background-color: #40e0d0;
+    text-align: center;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.gototop a span {
+    line-height: 36px;
+    font-size: 30px;
+    color: #940f0f;
+}
+
+/* ***************************** */
 /* Footer styling starts here */
 /* ***************************** */
 
@@ -321,7 +357,7 @@ footer {
     width: 100%;
     grid-area: footer;
     line-height: 4em;
-    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
+    background: linear-gradient(#40e0d0, #ffffff, #ffffff, #40e0d0);
 }
 
 footer ul {
@@ -363,7 +399,7 @@ footer a {
 
     .logo {
         grid-column: 1 / 2;
-        line-height: 4em;
+        line-height: 5em;
     }
 
     nav {

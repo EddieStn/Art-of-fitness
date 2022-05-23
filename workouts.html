@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" id="logo">
             <h1>Art of Fitness</h1>
         </a>
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
@@ -37,6 +37,9 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Table of contents -->
+
     <div class="table">
 
         <h2>Go to your desired workout</h2>
@@ -46,7 +49,7 @@
 
             <a href="#triceps"><button>Triceps</button></a>
 
-            <a href="#shoulder"><button>Shoulder</button></a>
+            <a href="#shoulders"><button>Shoulders</button></a>
 
             <a href="#chest"><button>Chest</button></a>
 
@@ -61,21 +64,25 @@
         </div>
     </div>
     <div class="box">
-        <p>For the best in-depth explanation about anything muscle related, or for any info about workouts, please check
-            out
-            <a href="https://www.youtube.com/c/athleanx" target="_blank">Jeff Cavaliere</a>, a professional physical
-            therapist and a strenght coach.</p>
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/zyvjscQVFv8" title="YouTube video player"
+        <p>For the best in-depth explanation about anything muscle related, or for any info about workouts, please check out
+            <a href="https://www.youtube.com/c/athleanx" target="_blank"><strong>Jeff Cavaliere</strong></a>,
+            a professional physical therapist and a strenght coach.</p>
+        <iframe width="auto" height="300" src="https://www.youtube.com/embed/zyvjscQVFv8" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
 
-    <section class="muscle-groups">
-        <h2>The Perfect workouts</h2>
+    <!-- Perfect workouts -->
+
+    <section class="perfect-workouts">
+
+        <h2 class="title">The Perfect workouts</h2>
         <p>Combo exercises(eg. 1A, 1B, 2A, 2B) are to be performed with no rest in between.</p><br>
+
         <div id="chest">
-            <h3>Chest Workout</h3>
+
+            <h3 class="sub-title">Chest</h3>
             <p>1A - Barbell Bench Press -> 4 sets of 6,8,10,12 reps</p><br>
             <p>1B - Horizontal chest cable / band crossover -> 15 reps</p><br>
 
@@ -87,7 +94,7 @@
 
             <p>4A - Weighted Pushups - 3 sets to Failure</p>
             <p>4B - Banded crossover pushup for 15 reps with band on each arm</p><br>
-            <iframe width="400" height="300"
+            <iframe width="auto" height="300"
                 src="https://www.youtube.com/embed/89e518dl4I8?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -95,34 +102,35 @@
         </div>
 
         <div id="biceps">
-            <h3>Biceps workout</h3>
+
+            <h3 class="sub-title">Biceps</h3>
             <p>1A - Cheat Curls -> To Failure
-                <p>1B - Barbell Drag Curl -> To Failure</p>
-                <p>>> Perform for 3 Sets</p><br>
+            <p>1B - Barbell Drag Curl -> To Failure</p>
+            <p>>> Perform for 3 Sets</p><br>
 
-                <p>2A - Weighted Chins -> To Failure</p>
-                <p>2B - Pulsed Contraction Chin Curls -> To Failure</p>
-                <p>>> Perform for 3 Sets</p><br>
+            <p>2A - Weighted Chins -> To Failure</p>
+            <p>2B - Pulsed Contraction Chin Curls -> To Failure</p>
+            <p>>> Perform for 3 Sets</p><br>
 
-                <p>3 - Dumbbell Curls -> 3 sets to failure (Utilize the stretch reflex of the triceps technique)</p><br>
+            <p>3 - Dumbbell Curls -> 3 sets to failure (Utilize the stretch reflex of the triceps technique)</p><br>
 
-                <ol style="list-style: upper-roman inside;">4 - Dumbbell Curl Trifecta -> 2 sets of 8 on each arm for
-                    each exercise:
+            <ol style="list-style: upper-roman inside;">4 - Dumbbell Curl Trifecta -> 2 sets of 8 on each arm for each exercise:
 
-                    <li>Cross supination (Emphasizes the long head of the biceps)</li>
-                    <li>Cross pronation (Emphasizes the brachialis )</li>
-                    <li>No Money curls (Emphasizes the short head of the biceps)</li>
+                <li>Cross supination (Emphasizes the long head of the biceps)</li>
+                <li>Cross pronation (Emphasizes the brachialis )</li>
+                <li>No Money curls (Emphasizes the short head of the biceps)</li>
 
-                </ol>
-                <iframe width="400" height="300"
-                    src="https://www.youtube.com/embed/gozU3CUIizs?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            </ol>
+            <iframe width="auto" height="300"
+                src="https://www.youtube.com/embed/gozU3CUIizs?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
         <div id="shoulders">
-            <h3>Shoulder workout</h3>
+
+            <h3 class="sub-title">Shoulder</h3>
             <p>Warmup with Overhead Banded Press -> 2 sets of 15 with 3 second holds each rep</p><br>
 
             <p>1A - OHP or Handstand pushups -> 4 sets of 12,8,6,6 reps</p>
@@ -136,7 +144,7 @@
 
             <p>4 - Cable or Banded Face Pulls - 3 sets of 15</p>
             <p>Perform these with a mindset of 15 sets of 1 to ensure highest quality of every rep.</p>
-            <iframe width="400" height="300"
+            <iframe width="auto" height="300"
                 src="https://www.youtube.com/embed/jv31A4Ab4nA?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -144,7 +152,8 @@
         </div>
 
         <div id="triceps">
-            <h3>Triceps workout</h3>
+
+            <h3 class="sub-title">Triceps</h3>
             <p>1 - Close Grip Pin Press -> 3 sets of 10,6,4 reps</p>
             <p>Choose a weight that allows you to reach failure in each rep range</p><br>
 
@@ -158,14 +167,15 @@
 
             <p>5 - Banded Lying Tricep Extensions - 2 sets to Failure using 15RM</p>
 
-            <iframe width="400" height="300"
+            <iframe width="auto" height="300"
                 src="https://www.youtube.com/embed/tMyFe-IL7Ks?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <div id="back">Back
-            <h3>Back workout</h3>
+        <div id="back">
+
+            <h3 class="sub-title">Back</h3>
             <p>1A - Deadlift -> 2 sets 10,8 reps</p>
             <p>1B - Weighted Chin -> 2 sets 4RM, 8RM</p><br>
 
@@ -179,15 +189,17 @@
             <p>5 - Hyper Y/W Combo -> 2 sets x 14-20 reps(alternate Y/W each rep)</p><br>
 
             <p>6 - Barbell Ladder Shrug Finisher -> 1 set to failure</p>
-            <iframe width="400" height="300"
+            <iframe width="auto" height="300"
                 src="https://www.youtube.com/embed/eE7dzM0iexc?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <div id="abs">Abs
-            <h3>Abs workout</h3>
-            <ol>Here is how to construct the perfect abs workout for beginners:
+        <div id="abs">
+
+            <h3 class="sub-title">Abs</h3>
+            <ol style="list-style: numbers inside;">Here is how to construct the perfect abs workout for
+                <strong>beginners</strong>:
 
                 <li>ISO Reverse Crunches x 30-60 seconds</li>
                 <li>Seated Ab Circles x 30-60 seconds (alternate cw and ccw directions)</li>
@@ -198,9 +210,10 @@
                 <li>Oak Tree Stepouts x 30-60 seconds each side</li>
                 <li>Banded Pulldowns x 30-60 seconds</li>
                 <li>Plank Pushaways x 30-60 seconds</li>
-            </ol>
+            </ol><br>
 
-            <ol>Here is how to construct the perfect abs workout for more advanced lifters:
+            <ol style="list-style: numbers inside;">Here is how to construct the perfect abs workout for more
+                <strong>advanced</strong> lifters:
 
                 <li>Hanging ‘X’ Raises x 30-60 seconds</li>
                 <li>Hanging Leg Spirals x 30-60 seconds (alternate right and left twists)</li>
@@ -212,12 +225,16 @@
                 <li>Banded Pulldowns x 30-60 seconds</li>
                 <li>Plank Punchouts x 30-60 seconds</li>
             </ol>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/qk97w6ZmV90?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="auto" height="300"
+                src="https://www.youtube.com/embed/qk97w6ZmV90?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
-        <div id="legs">Legs
-            <h3>Legs workout</h3>
+        <div id="legs">
+
+            <h3 class="sub-title">Legs</h3>
             <p>1 - Barbell Squat -> 4 sets x 5RM, 5RM, 10RM, 25RM</p><br>
             <p>2 - Barbell hip thruster -> 4 sets x 25, 10, 5, 5</p><br>
             <ol style="list-style: upper-alpha inside;">3 - DB bulgarian HI/LOW split squats
@@ -225,35 +242,50 @@
                 <li>Bodyweight explosive plyo hops -> 1set to failure on each leg</li>
             </ol><br>
             <p>4 - DB TKE drop lunge -> 2 reps x 10, 12RM on each leg</p>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/RjexvOAsVtI?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="auto" height="300"
+                src="https://www.youtube.com/embed/RjexvOAsVtI?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="full-body">
+            <h3 class="sub-title">Full Body</h3>
+            <p>Here is how to construct the perfect total body workout A:</p><br>
+
+            <p>1. 3D Lunge Warmup - 2-3 x 7 reps each direction</p>
+            <p>2. Barbell Squats - 3 x 5</p>
+            <p>3. Barbell Hip Thrusts - 3-4 x 10-12</p>
+            <p>4. Barbell Bench Press - 3 x 5</p>
+            <p>5. Weighted Chin Ups - 3 x 6-10 to failure</p>
+            <p>6. DB Farmer’s Carries - 3-4 x 50 steps with half bodyweight</p>
+            <p>7. Face Pulls - 2 x 12 (using 12 sets of 1 mentality)</p><br>
+
+            <p>Here is how to construct the perfect total body workout B:</p><br>
+
+            <p>1. 3D Lunge Warmup - 2-3 x 7 reps each direction</p>
+            <p>2. Deadlifts - 3 x 5</p>
+            <p>3. Barbell Squats or Barbell Reverse Lunges - 3-4 x 10</p>
+            <p>4. Barbell OHP - 3 x 5</p>
+            <p>5. Barbell Rows - 3 x 10-12</p>
+            <p>6. DB Overhead Farmer’s Carries - 3-4 x 50 steps with one quarter bodyweight</p>
+            <p>7. Face Pulls or other corrective - 2 x 12 (using 12 sets of 1 mentality)</p>
+
+            <iframe width="auto" height="300"
+                src="https://www.youtube.com/embed/R6gZoAzAhCg?list=PLRS2DE4P39EdA_gtx32NL2WeIu_94rzqt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </section>
 
-    <!-- Workouts -->
+    <!-- Arrow up -->
 
-    <div class="full-body">
-        <h2>Also check these workouts</h2>
-
-        <div class="images">
-            <img src="assets/images/100-burpees-workout-intro.jpg"
-                alt="Exercises and instructions on how to be performed">
-        </div>
-
-        <div class="images">
-            <img src="assets/images/4x4-workout-intro.jpg" alt="Exercises and instructions on how to be performed">
-        </div>
-
-        <div class="images">
-            <img src="assets/images/better-sleep-yoga-workout-intro.jpg"
-                alt="Exercises and instructions on how to be performed">
-        </div>
-
-        <div class="images">
-            <img src="assets/images/better-than-coffee-workout-intro.jpg"
-                alt="Exercises and instructions on how to be performed">
-        </div>
+    <div class="gototop">
+        <a href="#"><span class="fa-solid fa-angle-up"></span></a>
     </div>
+
+    <!-- Footer -->
 
     <footer>
         <ul>

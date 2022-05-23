@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap');
 
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
     letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -16,30 +21,37 @@ ul {
     list-style: none;
 }
 
-h2 {
+p, ol, iframe {
+    padding-inline: 2em;
+}
+
+h1, h2, h3 {
+    font-family: Lora, sans-serif;
+}
+
+h2, h3 {
     text-align: center;
     letter-spacing: 2px;
     background-color: #fff;
 }
 
-img,
-picture {
+img, picture {
   max-width: 100%;
   display: block;
 }
 
 body {
-    font-family: Lora, Oxygen, sans-serif;
+    font-family: Oxygen, sans-serif;
     font-weight: 400;
     color: rgb(104, 11, 11);
-    background-color: rgb(185, 185, 185);
+    background-color: #b9b9b9;
 
     display: grid;
     grid-template:
         "header header header" 5em
         ". table ." 25em
         ". box ." auto
-        ". muscle-groups ." auto
+        ". perfect-workouts ." auto
         ". full-body ." auto
         "footer footer footer" 6em
         / 1fr minmax(25em, 5fr) 1fr;
@@ -48,31 +60,29 @@ body {
 
 .box {
     grid-area: box;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: #333 0 5px 10px 5px;
 }
 
 .box p {
-    background-color: #fff;
     padding: 1em;
 }
 
 iframe {
-    margin-top: 1em;
-}
-
-h3 {
-    text-align: center;
     margin: 1em;
 }
 
 .table {
     grid-area: table;
     background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
-    background-color: rgb(187, 187, 187);
+    background-color: #b9b9b9;
     border-radius: 0 0 30px 30px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-around;
+    box-shadow: #333 0 5px 10px 5px;
 }
 
 .btn {
@@ -93,9 +103,8 @@ h3 {
 
 button {
     cursor: pointer;
-    font-family: Oxygen, sans-serif;
     font-weight: 700;
-    background-color: rgb(104, 11, 11);
+    background-color: #680b0b;
     color: #FFF;
     border-radius: 10px;
     font-size: 1.3rem;
@@ -104,13 +113,32 @@ button {
 
 button:hover {
     background-color: #fff;
-    color: rgb(104, 11, 11);
+    color: #680b0b;
 }
 
-.muscle-groups {
-    grid-area: muscle-groups;
-    align-items: center;
+.perfect-workouts {
+    grid-area: perfect-workouts;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: #333 0 5px 10px 5px;
 }
+
+.title {
+    font-size: 2rem;
+    margin: .7em;
+    padding: .67em;
+    border-radius: 50%;
+    box-shadow: #680b0b 0 5px 10px 2px;
+}
+
+.sub-title {
+    margin: 1em;
+    font-size: 1.2rem;
+    padding: .5em;
+    border-radius: 50%;
+    box-shadow: #680b0b 0 3px 5px 2px;
+}
+
 
 .full-body {
     grid-area: full-body;
@@ -122,12 +150,12 @@ button:hover {
 /* ***************************** */
 
 header {
-    background: linear-gradient(rgb(150, 255, 223), rgb(241, 255, 252), rgb(241, 255, 252), rgb(150, 255, 223));
+    background: linear-gradient(#40e0d0, #ffffff, #ffffff, #40e0d0);
     grid-area: header;
     letter-spacing: 3px;
-    position: fixed;
+    position: relative;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
 }
 
 .logo {
@@ -144,7 +172,7 @@ nav {
     text-align: right;
     top: 100%;
     right: 0;
-    background: rgb(150, 255, 223);
+    background: #40e0d0;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 250ms ease-in-out;
@@ -154,6 +182,7 @@ nav li {
     margin-bottom: 1em;
     margin-right: 1em;
     font-weight: 500;
+    padding-inline: 10px;
 }
 
 nav a {
@@ -191,13 +220,42 @@ nav a {
     border-bottom: 1px dotted;
 }
 
-/* footer */
+/* ***************************** */
+/* Arrow up styling starts here */
+/* ***************************** */
+
+.gototop {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 10;
+}
+
+.gototop a {
+    height: 36px;
+    width: 36px;
+    display: block;
+    background-color: #40e0d0;
+    text-align: center;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.gototop a span {
+    line-height: 36px;
+    font-size: 30px;
+    color: #940f0f;
+}
+
+/* ***************************** */
+/* Footer styling starts here */
+/* ***************************** */
 
 footer {
     width: 100%;
     grid-area: footer;
     line-height: 4em;
-    background: linear-gradient(rgb(150, 255, 223), rgb(255, 255, 255), rgb(255, 255, 255), rgb(150, 255, 223));
+    background: linear-gradient(#40e0d0, #ffffff, #ffffff, #40e0d0);
 }
 
 footer ul {
@@ -233,7 +291,7 @@ footer a {
 
     .logo {
         grid-column: 1 / 2;
-        line-height: 4em;
+        line-height: 5em;
     }
 
     nav {
@@ -278,6 +336,16 @@ footer a {
 
     nav a:hover::before {
         transform: scale(1, 1);
+    }
+
+    footer li {
+        margin: 0 2em;
+        transform: scale(1, 1);
+        transition: transform ease-in-out 150ms;
+    }
+
+    footer li:hover {
+        transform: scale(2, 2)
     }
 
 }
