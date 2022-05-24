@@ -7,12 +7,12 @@
     <meta name="description" content="Art of Fitness is a webpage designed to give accurate information for people who are just starting their fitness journey. Includes workout exercises and healthy meals">
     <meta name="keywords" content="workout, healthy, fit, fitness, physical exercises">
 
-    <link rel="stylesheet" href="assets/css/style-grid.css">
+    <link rel="stylesheet" href="assets/css/style-meals.css">
     <title>Art of Fitness</title>
 </head>
 <body>
     <header>
-        <a href="index.html"  class="logo">
+        <a href="index.html" class="logo">
             <h1>Art of Fitness</h1>
         </a>
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
@@ -35,26 +35,58 @@
         </nav>
     </header>
 
+
+    <!-- Arrow up -->
+
+    <div class="gototop">
+        <a href="#"><span class="fa-solid fa-angle-up"></span></a>
+    </div>
+
+    <!-- Footer  -->
+
     <footer>
         <ul>
             <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="color: #4267B2;" aria-label="Visit my facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="color: #4267B2;"
+                    aria-label="Visit my facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener" style="color: #1DA1F2;" aria-label="Visit my twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" style="color: #1DA1F2;"
+                    aria-label="Visit my twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="color: #0A66C2;" aria-label="Visit my twitter page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="color: #0A66C2;"
+                    aria-label="Visit my twitter page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li>
-                <a href="https://www.youtube.com/c/athleanx" target="_blank" rel="noopener" style="color: #FF0000;" aria-label="Visit the youtube page of athleanx(opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.youtube.com/c/athleanx" target="_blank" rel="noopener" style="color: #FF0000;"
+                    aria-label="Visit the youtube page of athleanx(opens in a new tab)"><i
+                        class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
                 <a href="contact.html" style="color: #430297;"><i class="fa-solid fa-envelope"></i></a>
             </li>
         </ul>
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/f5991483d4.js" crossorigin="anonymous"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("open");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    
 </body>
 </html>
