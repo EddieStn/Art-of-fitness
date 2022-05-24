@@ -1,70 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Art of Fitness is a webpage designed to give accurate information for people who are just starting their fitness journey. Includes workout exercises and healthy meals">
+    <meta name="description" content="Art of Fitness is a webpage designed to give accurate information for people who are just starting their fitness journey. Includes workout exercises and healthy meals">
     <meta name="keywords" content="workout, healthy, fit, fitness, physical exercises">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Art of Fitness</title>
 </head>
-
-<!-- Form styling -->
-
 <style>
-    .form-section {
+
+    div {
         grid-column: 2/3;
-        grid-row: 2/5;
     }
 
-    .contact-form {
-        margin-top: 2em;
-        color: #fff;
-        background-color: #940f0f;
-        max-width: 500px;
-        padding: 30px;
-        border-radius: 5px;
-        box-shadow: #333 0 4px 8px 8px;
-    }
-
-    .contact-form h2 {
+    h2 {
         background-color: inherit;
-        margin-bottom: 2em;
-    }
-
-    .text-input, textarea {
-        width: 100%;
-        height: 2em;
-        margin: 5px 0 30px 0;
-        border-radius: 4px;
-    }
-
-    textarea {
-        height: auto;
-    }
-
-    .button {
-        margin: .5em .5em .5em 60%;
-        border-radius: 4px;
-        padding: 10px 20px 10px 20px;
-        font-size: 1.2rem;
-        background-color: #40e0d0;
-        color: #940f0f;
-        cursor: pointer;
-        transform: scale(1, 1);
-        transition: transform ease-in-out 150ms;
-    }
-
-    .button:hover {
-        transform: scale(1.2, 1.2)
+        margin-bottom: 1em;
     }
     
 </style>
-
 <body>
     <header>
         <a href="index.html" class="logo">
@@ -84,30 +41,18 @@
                     <a href="meals.html">Meals <i class="fa-solid fa-utensils"></i></a>
                 </li>
                 <li>
-                    <a href="contact.html" class="active">Contact <i class="fa-solid fa-envelope"></i></a>
+                    <a href="contact.html">Contact <i class="fa-solid fa-envelope"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
+    
 
-    <!-- Form section -->
-
-    <section class="form-section">
-        <form method="GET" action="thanks.html" class="contact-form">
-            <h2>If you need help with anything on this webpage, or you would just like to say "Hi", please do not
-                hesitate to drop me a message.</h2>
-            <label for="nickname">Nickname:</label>
-            <input class="text-input" id="nickname" name="nickname" type="text" placeholder="Choose a nickname">
-
-            <label for="email">Email Address:</label>
-            <input class="text-input" type="email" id="email" name="email_address" placeholder="Type your email address"required>
-
-            <label for="msg">Your message:</label>
-            <textarea name="message" id="msg" placeholder="Type your message here" rows="5"></textarea>
-
-            <input class="button" type="submit" value="Send!">
-        </form>
-    </section>
+    <div>
+        <h2>Thank you for your message!</h2>
+        <h2>I will get back to you as soon as i can.</h2>
+        <h2>Stay fit!</h2>
+    </div>
 
     <!-- Footer  -->
 
@@ -137,6 +82,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/f5991483d4.js" crossorigin="anonymous"></script>
+    
 </body>
-
 </html>
