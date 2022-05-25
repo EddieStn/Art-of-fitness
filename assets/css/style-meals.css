@@ -19,14 +19,20 @@ ul {
     list-style: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Lora, sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
-h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    background-color: #fff;
+h2, h3 {
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: .5em;
 }
 
 img, picture {
@@ -36,6 +42,7 @@ img, picture {
 
 body {
     font-family: Oxygen, sans-serif;
+    letter-spacing: 1px;
     font-weight: 400;
     color: #680b0b;
     background-color: #b9b9b9;
@@ -43,15 +50,40 @@ body {
     display: grid;
     grid-template:
         "header header header" 5em
-        "hero hero hero" 70vh
-        ". table ." 10em
-        ". motivation ." auto
-        ". benefits ." auto
-        ". tips ." auto
+        ". foods ." auto
+        ". information ." auto
         "footer footer footer" 6em
         / 1fr minmax(25em, 5fr) 1fr;
     gap: 1em;
 }
+
+/* ***************************** */
+/* Food categories styles start here  */
+/* ***************************** */
+
+.foods {
+    grid-area: foods;
+    display: drid;
+    justify-content: center;
+    align-items: center;
+}
+
+.foods ul {
+    max-width: 400px;
+    list-style: inside;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+.foods li {
+    margin-left: 60px;
+    font-size: 1.2rem;
+}
+
+.information {
+    grid-area: information;
+}
+
 /* ***************************** */
 /* Header, logo and navigation styles start here  */
 /* ***************************** */
