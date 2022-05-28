@@ -53,14 +53,12 @@ body {
         "hero hero hero" 60vh
         ". foods ." auto
         ". information ." auto
+        ". recipes ." auto
         "footer footer footer" 6em
         / 1fr minmax(25em, 5fr) 1fr;
     gap: 1em;
 }
 
-/* ***************************** */
-/* Food categories styles start here  */
-/* ***************************** */
 
 .hero {
     color: #ffd700;
@@ -81,6 +79,10 @@ body {
     background: linear-gradient(45deg, #ea00ffbb, #4d0202bb, #ea00ffbb);
     border-radius: 20px;
 }
+
+/* ***************************** */
+/* Food categories styles start here  */
+/* ***************************** */
 
 .foods {
     margin-top: 2em;
@@ -111,9 +113,12 @@ body {
     font-size: 1.2rem;
 }
 
+/* ***************************** */
+/* dietary information styles start here  */
+/* ***************************** */
+
 .information {
     box-shadow: #000000 0px 4px 8px 2px;
-
     padding-top: 2em;
     grid-area: information;
     background-color: #fff;
@@ -121,7 +126,7 @@ body {
 
 .information div {
     margin-top: 3em;
-    /* padding-bottom: 1em; */
+    padding-bottom: 1em;
     padding-inline: 2em;
 }
 
@@ -129,6 +134,15 @@ hr {
     margin-top: 3em;
     border-bottom: 3px solid #cfa20c;;
 }
+
+/* ***************************** */
+/* Recipies styles start here  */
+/* ***************************** */
+
+.recipes {
+    grid-area: recipes;
+}
+
 /* ***************************** */
 /* Header, logo and navigation styles start here  */
 /* ***************************** */
