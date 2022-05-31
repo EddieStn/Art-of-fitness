@@ -2,7 +2,7 @@
 
 ### Art of Fitness is a website designed to help everyone getting into fitenss. It explains some benefits of a fit life, workout tips as well as exercices, and dietary informations as well as some healthy meal examples.
 
-### Open the webpage with this [live link](https://eddiestn.github.io/Art-of-fitness/index.html)
+### Open the live webpage through this [link](https://eddiestn.github.io/Art-of-fitness/index.html)
 
 <img src="assets/images/Responsive-screenshot.png" alt="website responsiveness sceenshots">
 
@@ -138,7 +138,6 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 
 ### Many thanks for their brilliant teachings to:
 
-- [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible) (collapsible)
 - [Kevin Powell](https://www.youtube.com/kepowob) (grid and flex css layout)
 - [Code Institute](https://learn.codeinstitute.net/) (general)
 
@@ -151,7 +150,10 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 - [Code Institute](https://learn.codeinstitute.net/)
 - https://learncssgrid.com/
 - https://cssgridgarden.com/
+- [Kevin Powell](https://www.youtube.com/kepowob)
+- [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible)
 - [Slack](https://slack.com/intl/en-gb/)
+
 
 
 
