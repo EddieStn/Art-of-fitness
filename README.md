@@ -21,29 +21,46 @@
 
 As you open the website you are greeted by an encouraging phrase with a fitness photograph behind it, followed by the table of contents with redirecting links across the page
 
+<img src="assets/images/landing-page.png">
+
 ## Motivation section
 
 Boost your confidence with some famous motivational quotes and photos of athletic people.
+
+<img src="assets/images/motivation.png">
 
 ## Benefits of Fitness and Workout tips sections
 
 These 2 sections contain some benefits and tips and each category include expandable text giving more information on that specific subject.
 
+<img src="assets/images/benefits-tips.png">
+
 ## Footer
 
 The footer contains links to other social media platforms and it is accesible across all pages.
+
+<img src="assets/images/footer.png">
 
 ## Workouts
 
 The workouts page contains perfect workouts for each individual body area as well as full-body, which are easily accesible from the top of the page, in the table of contents.
 
+<img src="assets/images/workouts.png">
+
 ## Meals
 
-The meals page is basically a guide with nutritional knowledge, best times/things to eat around workouts and healthy meals for breakfast/lunch/dinner and snacks in between.
+The meals page is a guide with nutritional knowledge, best times/things to eat around workouts and healthy meals for breakfast/lunch/dinner and snacks in between.
+
+<img src="assets/images/meals-hero.png">
+<img src="assets/images/type-of-foods.png">
+<img src="assets/images/meal-times.png">
+<img src="assets/images/meals-recipes.png">
 
 ## Contact
 
 The contact page helps people to easily send a message in case they struggle anywhere or they need more information on any topic.
+
+<img src="assets/images/contact.png">
 
 # Testing 
 
@@ -62,15 +79,14 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 
 ## Content
 
-[Parade.com](https://parade.com/1045407/marynliles/fitness-quotes/) - Fitess quotes.
-
-[Athleanx](https://athleanx.com/) - Nutrirional information and workouts.
+- Fitess quotes - [Parade.com](https://parade.com/1045407/marynliles/fitness-quotes/)
+- Nutrirional information and workouts- [Athleanx](https://athleanx.com/)
+- Navbar styling inspired from Kevin Powell [youtube video](https://www.youtube.com/watch?v=8QKOaTYvYUA&ab_channel=KevinPowell) 
 
 ## Media
 
-[Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2) - Youtube workout videos.
-
-The pictures used on this website were taken from the open source website, [pexels](https://www.pexels.com/).
+- Youtube workout videos - [Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2)
+- The pictures used on this website were taken from the open source website, [pexels](https://www.pexels.com/)
 
 # Aknowledgements
 
