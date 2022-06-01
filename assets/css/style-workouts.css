@@ -154,7 +154,6 @@ header {
 .logo {
     color: #940f0f;
     display: flex;
-    align-items: left;
     margin-left: 1em;
     line-height: 5em;
     width: max-content;
