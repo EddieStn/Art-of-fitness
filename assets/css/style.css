@@ -190,7 +190,7 @@ nav a {
     padding: .2em;
 }
 
-button {
+.section-link {
     cursor: pointer;
     font-weight: 700;
     background-color: #680b0b;
@@ -200,7 +200,7 @@ button {
     padding: .6em;
 }
 
-button:hover {
+.section-link:hover {
     background-color: #fff;
     color: #680b0b;
 }
