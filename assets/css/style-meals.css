@@ -103,7 +103,7 @@ body {
     padding: .5em;
 }
 
-.foods ul {
+.food-category {
     flex: 1 1 12em;
     max-width: 400px;
     list-style: inside;
@@ -114,7 +114,8 @@ body {
 }
 
 .foods li {
-    margin-left: 20px;
+    list-style: circle;
+    margin-left: 1.5em;
     font-size: 1.2rem;
     padding: .1em;
 }
