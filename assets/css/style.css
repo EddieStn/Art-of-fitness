@@ -49,7 +49,7 @@ body {
         ". benefits ." auto
         ". tips ." auto
         "footer footer footer" 6em
-        / 1fr minmax(25em, 5fr) 1fr;
+        / 1fr minmax(15em, 5fr) 1fr;
     gap: 1em;
 }
 /* ***************************** */
@@ -442,6 +442,24 @@ textarea {
 
 .required {
     color: #ffd900a6;
+}
+
+/* *********************** */
+/* Thank you page styles start here */
+/* *********************** */
+
+div {
+    grid-column: 2/3;
+}
+
+.thanks h2 {
+    text-transform: uppercase;
+    color: #ffd700;
+    background-color: #940f0f7c;
+    margin-bottom: 1em;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 /* *********************** */

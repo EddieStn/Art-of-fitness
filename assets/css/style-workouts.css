@@ -74,7 +74,7 @@ iframe {
 
 .table {
     grid-area: table;
-    background: url(../images/pexels-ivan-samkov-4164766.jpg) no-repeat center center / cover;
+    background: url(../images/pexels-anush-gorak-1431282.jpg) no-repeat center center / cover;
     background-color: #b9b9b9;
     border-radius: 0 0 30px 30px;
     display: flex;
@@ -88,7 +88,7 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1em;
+    gap: 2em;
 }
 
 .table h2 {
