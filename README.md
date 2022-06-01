@@ -94,6 +94,12 @@
  
 ## Validator testing
 
+https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Findex.html
+https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fworkouts.html
+https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fmeals.html
+https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fcontact.html
+https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fthanks.html
+
 # Bugs 
 
 ### The project wasn`t responsive across all devices
