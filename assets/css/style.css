@@ -383,6 +383,10 @@ footer a {
 /* Contact form styling starts here */
 /* ***************************** */
 
+.contact {
+    background: url(../images/photo-1518644961665-ed172691aaa1.jpeg) no-repeat top center / cover;
+}
+
 .form-section {
     grid-column: 2/3;
     grid-row: 2/5;
@@ -391,7 +395,8 @@ footer a {
 .contact-form {
     margin-top: 2em;
     color: #ffd700;
-    background-color: #940f0f;
+    background-color: #940f0f7c;
+    min-width: 320px;
     max-width: 500px;
     padding: 30px;
     border-radius: 5px;
@@ -399,7 +404,7 @@ footer a {
 }
 
 .contact-form h2 {
-    background-color: inherit;
+    background-color: unset;
     margin-bottom: 2em;
 }
 
