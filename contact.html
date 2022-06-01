@@ -12,64 +12,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Art of Fitness</title>
 </head>
-
-<!-- Form styling -->
-
-<style>
-    .form-section {
-        grid-column: 2/3;
-        grid-row: 2/5;
-    }
-
-    .contact-form {
-        margin-top: 2em;
-        color: #ffd700;
-        background-color: #940f0f;
-        max-width: 500px;
-        padding: 30px;
-        border-radius: 5px;
-        box-shadow: #333 0 4px 8px 8px;
-    }
-
-    .contact-form h2 {
-        background-color: inherit;
-        margin-bottom: 2em;
-    }
-
-    .text-input, textarea {
-        width: 100%;
-        height: 2em;
-        margin: 5px 0 30px 0;
-        border-radius: 4px;
-    }
-
-    .text-input:hover,
-    textarea:hover {
-        box-shadow: #333 0 2px 4px 2px;
-    }
-
-    textarea {
-        height: auto;
-    }
-
-    .button {
-        margin: .5em .5em .5em 60%;
-        border-radius: 4px;
-        padding: 10px 20px 10px 20px;
-        font-size: 1.2rem;
-        background-color: #ffd700;
-        color: #940f0f;
-        cursor: pointer;
-        transform: scale(1, 1);
-        transition: transform ease-in-out 150ms;
-    }
-
-    .button:hover {
-        transform: scale(1.2, 1.2)
-    }
-    
-</style>
-
 <body>
     <header>
         <a href="index.html" class="logo">
@@ -101,16 +43,16 @@
         <form method="GET" action="thanks.html" class="contact-form">
             <h2>If you need help with anything on this webpage, or you would just like to say "Hi", please do not
                 hesitate to drop me a message.</h2>
-            <label for="nickname">Nickname:</label>
-            <input class="text-input" id="nickname" name="nickname" type="text" placeholder="Choose a nickname">
+            <label for="nickname">Nickname: <span class="required">required *</span></label>
+            <input class="text-input" id="nickname" name="nickname" type="text" placeholder="Choose a nickname" required>
 
-            <label for="email">Email Address:</label>
-            <input class="text-input" type="email" id="email" name="email_address" placeholder="Type your email address"required>
+            <label for="email">Email Address: <span class="required">required *</span></label>
+            <input class="text-input" type="email" id="email" name="email_address" placeholder="Type your email address" required>
 
-            <label for="msg">Your message:</label>
-            <textarea name="message" id="msg" placeholder="Type your message here" rows="5"></textarea>
+            <label for="msg">Your message: <span class="required">required *</span></label>
+            <textarea name="message" id="msg" placeholder="Type your message here" required rows="5"></textarea>
 
-            <input class="button" type="submit" value="Send!">
+            <input class="signup-button" type="submit" value="Send!">
         </form>
     </section>
 
