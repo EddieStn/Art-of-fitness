@@ -66,7 +66,7 @@
 
 ### The submit button takes you to a dummy "Thank you!" page
 
-<img src="">
+<img src="assets/images/thanks.png">
 
 # Technologies used
 
@@ -89,8 +89,8 @@
 
 - I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari.
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
-- I confirmed that all hoverable and clickable elements work accordingly
-- I confirmed that this project is responsive and functions on all screen sizes using chrome devtools.
+- I confirm that all hoverable and clickable elements work accordingly
+- I confirm that this project is responsive and functions on all screen sizes, used chrome devtools for testing.
  
 ## Validator testing
 
@@ -104,13 +104,9 @@
 
 ### 
 
-# Local development
-
-## Forking
-
-## Cloning
-
 # Deployment 
+
+## Cloning and Forking
 
 ### The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
@@ -132,7 +128,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 ## Media
 
 - Youtube workout videos - [Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2)
-- The pictures used on this website were taken from the open source website, [pexels](https://www.pexels.com/)
+- The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/)
 
 # Aknowledgements
 
@@ -140,6 +136,8 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 
 - [Kevin Powell](https://www.youtube.com/kepowob) (grid and flex css layout)
 - [Code Institute](https://learn.codeinstitute.net/) (general)
+
+### I`d also like to thank my mentor, Chris Quinn, for his guidance! 
 
 # Sources
 
