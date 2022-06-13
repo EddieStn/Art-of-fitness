@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    letter-spacing: 2px;
 }
 
 html {
@@ -25,7 +26,6 @@ h1, h2 {
 
 h2 {
     text-align: center;
-    letter-spacing: 2px;
     background-color: #fff;
 }
 
@@ -44,12 +44,12 @@ body {
     grid-template:
         "header header header" 5em
         "hero hero hero" 70vh
-        ". table ." 10em
+        ". table ." minmax(10em, 15em)
         ". motivation ." auto
         ". benefits ." auto
         ". tips ." auto
         "footer footer footer" 6em
-        / 1fr minmax(15em, 5fr) 1fr;
+        / 1fr minmax(10em, 10fr) 1fr;
     gap: 1em;
 }
 /* ***************************** */
@@ -67,7 +67,6 @@ header {
 
 .logo {
     color: #940f0f;
-    font-weight: 100;
     display: flex;
     margin-left: 1em;
     line-height: 5em;
@@ -178,6 +177,7 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;
+    margin-top: 2em;
 }
 
 .table h2 {
@@ -210,9 +210,9 @@ nav a {
 
 .motivation {
     grid-area: motivation;
-    max-width: 100rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
+    max-width: 100%;
+    /* margin-inline: auto; */
+    /* padding-inline: 2rem; */
 }
 
 .stacked {
@@ -226,9 +226,9 @@ nav a {
 
 .quote-grid {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    /* grid-template-columns: minmax() ; */
+    gap: 1em;
+    /* grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); */
+    /* grid-template-columns: minmax(9em, 1fr) ; */
 }
 
 .quote {
@@ -240,7 +240,7 @@ nav a {
     color: #000;
     align-self: end;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .5px;
     margin: 1rem 1rem 4rem;
     padding: 0.5rem;
@@ -279,12 +279,12 @@ nav a {
     background-color: rgb(104, 11, 11);
     color: white;
     cursor: pointer;
-    padding: 1em 1em 1em 4em;
+    padding: 1em 1em 1em .5em;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     letter-spacing: 2px;
 }
   
@@ -304,18 +304,17 @@ nav a {
 .content p {
     margin-left: .5em;
     padding: .4em;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
-
 
 .collapsible:before {
     content: '\2606';
-    margin-right: .6em;
+    margin-right: .3em;
 }
 
 .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #FFF;
     float: right;
     margin-left: 5px;
@@ -447,7 +446,7 @@ textarea {
 /* Thank you page styles start here */
 /* *********************** */
 
-div {
+.thanks {
     grid-column: 2/3;
 }
 
@@ -468,6 +467,10 @@ div {
 @media screen and (min-width: 700px) {
     .quote-content {
         margin: 1rem 1rem 8rem;
+    }
+
+    .collapsible {
+        font-size: 1.3rem;
     }
 }
 
@@ -535,6 +538,7 @@ div {
         transform: scale(1, 1);
     }
 
+
     .quote-grid {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
@@ -553,10 +557,4 @@ div {
         transform: scale(2, 2)
     }
     
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        max-width: 320px;
-    }
 }
