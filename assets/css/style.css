@@ -332,8 +332,8 @@ nav a {
 
 .gototop {
     position: fixed;
-    bottom: 2em;
-    right: 2em;
+    bottom: 3em;
+    right: .5em;
     z-index: 10;
 }
 

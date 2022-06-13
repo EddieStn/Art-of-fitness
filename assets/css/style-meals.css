@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    letter-spacing: 2px;
 }
 
 html {
@@ -22,7 +23,6 @@ ul {
 h1, h2, h3 {
     font-family: Lora, sans-serif;
     text-align: center;
-    letter-spacing: 3px;
 }
 
 p {
@@ -38,7 +38,6 @@ img, picture {
 
 body {
     font-family: Oxygen, sans-serif;
-    letter-spacing: 1px;
     font-weight: 400;
     color: #680b0b;
     background-color: #b9b9b9;
@@ -51,7 +50,7 @@ body {
         ". information ." auto
         ". recipes ." auto
         "footer footer footer" 6em
-        / 1fr minmax(25em, 5fr) 1fr;
+        / 1fr minmax(10em, 5fr) 1fr;
     gap: 1em;
 }
 
@@ -238,8 +237,8 @@ nav a {
 
 .gototop {
     position: fixed;
-    bottom: 2em;
-    right: 2em;
+    bottom: 3em;
+    right: .5em;
     z-index: 10;
 }
 
