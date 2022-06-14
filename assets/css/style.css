@@ -20,12 +20,12 @@ ul {
     list-style: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Lora, sans-serif;
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
     background-color: #fff;
 }
 
@@ -376,6 +376,146 @@ footer a {
     font-size: 1.5rem;
     margin: .8em;
 }
+
+/* ***************************** */
+/* Meals page styling starts here */
+/* ***************************** */
+
+.meals-page {
+    grid-template:
+        "header header header" 5em
+        "hero hero hero" 60vh
+        ". foods ." auto
+        ". information ." auto
+        ". recipes ." auto
+        "footer footer footer" 6em
+        / 1fr minmax(10em, 5fr) 1fr;
+}
+
+.meals-page p {
+    font-size: 1.2rem;
+    margin: .8em;
+    padding-bottom: 1em;
+}
+
+/* ***************************** */
+/* Hero meals styles start here  */
+/* ***************************** */
+
+.hero-meals {
+    position: relative;
+    grid-area: hero;
+    margin-top: -1em;
+    background: url("https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?cs=srgb&dl=pexels-trang-doan-1092730.jpg&fm=jpg") no-repeat center center / cover;
+}
+.hero-meals div {
+    width: 35%;
+    height: fit-content;
+    padding: 1em;
+    background: linear-gradient(45deg, #ea00ffbb, #4d0202bb, #ea00ffbb);
+    position: absolute;
+    border-radius: 20px;
+    top: 5em;
+    left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-meals h1 {
+    color: #ffd700;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+/* ***************************** */
+/* Food categories styles start here  */
+/* ***************************** */
+
+.foods {
+    margin-top: 2em;
+    grid-area: foods;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foods h1 {
+    width: 100%;
+    margin-top: 2em;
+    background-color: #fff;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.foods h3 {
+    margin: 1em;
+    background-color: #610b61;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.food-category {
+    flex: 1 1 12em;
+    max-width: 400px;
+    list-style: inside;
+    margin: 1em;
+    color: #ffd700;
+    background: linear-gradient(#610b61, #800c0c);
+    box-shadow: #000000 4px 4px 8px 1px;
+}
+
+.foods li {
+    list-style: circle;
+    margin-left: 1.5em;
+    font-size: 1.2rem;
+    padding: .1em;
+}
+
+/* ***************************** */
+/* dietary information styles start here  */
+/* ***************************** */
+
+.section-meals {
+    box-shadow: #000000 0px 4px 8px 2px;
+    padding-top: 2em;
+    grid-area: information;
+    background-color: #fff;
+}
+
+.section-meals div {
+    margin-top: 3em;
+    padding-bottom: 1em;
+    padding-inline: 2em;
+}
+
+.section-meals h2 {
+    text-align: left;
+    padding-left: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 3em;
+    border-bottom: 3px solid #c20d0d;;
+}
+
+/* ***************************** */
+/* Recipies styles start here  */
+/* ***************************** */
+
+.recipes {
+    grid-area: recipes;
+}
+
+
+
+
+
+
+
+
 
 /* ***************************** */
 /* Contact form styling starts here */

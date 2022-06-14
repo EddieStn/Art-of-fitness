@@ -4,7 +4,7 @@
 
 ### Open the live webpage through this [link](https://eddiestn.github.io/Art-of-fitness/index.html)
 
-<img src="assets/images/Responsive-screenshot.png" alt="website responsiveness sceenshots">
+<img src="assets/images/Responsive-screenshot.png" alt="website responsiveness sceenshots"> 
 
 # Features
 
@@ -87,10 +87,10 @@
 
 # Testing 
 
-- I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari.
+- I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari. (pictures)
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
 - I confirm that all hoverable and clickable elements work accordingly
-- I confirm that this project is responsive and functions on all screen sizes, used chrome devtools for testing.
+- I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. ( pictures)
  
 ## Validator testing
 
@@ -134,7 +134,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 ## Media
 
 - Youtube workout videos - [Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2)
-- The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/)
+- The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/) (add links note)
 
 # Aknowledgements
 
