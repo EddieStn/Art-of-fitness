@@ -4,7 +4,7 @@
 
 ### Open the live webpage through this [link](https://eddiestn.github.io/Art-of-fitness/index.html)
 
-<img src="assets/images/Responsive-screenshot.png" alt="website responsiveness sceenshots"> 
+<img src="assets/images/amiresponsive.png" alt="website responsiveness sceenshots"> 
 
 # Features
 
@@ -60,11 +60,11 @@
 
 ## Contact
 
-### The contact page helps people to easily send a message in case they struggle anywhere or they need more information on any topic.
+### The contact page allows people to easily send a message in case they struggle anywhere or they need more information on any topic.
 
 <img src="assets/images/contact.png">
 
-### The submit button takes you to a dummy "Thank you!" page
+### The submit button takes you to a "Thank you!" page, however, this being just for testing, the message is not sent.
 
 <img src="assets/images/thanks.png">
 
@@ -87,10 +87,21 @@
 
 # Testing 
 
-- I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari. (pictures)
+- I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari.
+
+<img src="assets/images/chrome.png" width="800">
+
+<img src="assets/images/firefox.png" width="800">
+
+<img src="assets/images/edge.png" width="800">
+
+<img src="assets/images/safari.png" width="400">
+
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
 - I confirm that all hoverable and clickable elements work accordingly
-- I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. ( pictures)
+- I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. 
+
+<video src="assets/videos/responsive.mp4" width="500" autoplay muted loop controls="1">
  
 ## Validator testing
 
