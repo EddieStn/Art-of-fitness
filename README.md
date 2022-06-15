@@ -53,10 +53,10 @@
 
 ### The meals page is a guide with nutritional knowledge, best times/things to eat around workouts and healthy meals for breakfast/lunch/dinner and snacks in between.
 
-<img src="assets/images/meals-hero.png">
-<img src="assets/images/type-of-foods.png">
-<img src="assets/images/meal-times.png">
-<img src="assets/images/meals-recipes.png">
+<img src="assets/images/meals-hero.png" width="800">
+<img src="assets/images/type-of-foods.png" width="800">
+<img src="assets/images/meal-times.png" width="800">
+<img src="assets/images/meals-recipes.png" width="800">
 
 ## Contact
 
@@ -79,11 +79,11 @@
 ## Frameworks and Libraries 
 
 - [FontAwesome](https://fontawesome.com/)
-- [pexels](https://www.pexels.com/)
 - [Google fonts](https://fonts.google.com/)
 - [Am I Responsive](https://ui.dev/amiresponsive)
 - [GitPod](https://gitpod.io/)
 - [GitHub](https://github.com/)
+- [Image compressor](https://imagecompressor.com/)
 
 # Testing 
 
@@ -101,15 +101,23 @@
 - I confirm that all hoverable and clickable elements work accordingly
 - I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. 
 
-<video src="assets/videos/responsive.mp4" width="500" autoplay muted loop controls="1">
- 
+<!-- <video src="assets/videos/responsive.mp4" width="500" autoplay muted loop controls="1"> -->
+
 ## Validator testing
 
-https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Findex.html
-https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fworkouts.html
-https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fmeals.html
-https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fcontact.html
-https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fthanks.html
+### HTML 
+
+- No errors were returned when passing through the official W3C validator
+    * https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Findex.html
+    * https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fworkouts.html
+    * https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fmeals.html
+    * https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fcontact.html
+    * https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Fthanks.html
+
+### CSS W3C Validator - JIGSAW
+
+- No errors were found when passing through the official (Jigsaw) validator
+    * https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css
 
 # Bugs 
 
@@ -119,11 +127,29 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitne
 - Began mobile styling first and added media querries for bigger screens after
 - Added hamburger menu for small screens to access other pages
 
-### 
+# Local development
+
+## Forking and Cloning
+
+## Forking a repository
+### A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+1. On GitHub.com, navigate to the EddieStn/Art-of-fitness repository.
+2. In the top-right corner of the page, click **Fork**.
+
+## Cloning your forked repository
+### Right now, you have a fork of the Art-of-fitness repository, but you do not have the files in that repository locally on your computer.
+
+1. On GitHub.com, navigate to your fork of the Art-of-fitness repository.
+2. Above the list of files, click  **Code**.
+3. Copy the URL for the repository.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of YOUR-USERNAME:
+    * `$ git clone https://github.com/YOUR-USERNAME/Art-of-fitness`
+7. Press Enter. Your local clone will be created.
 
 # Deployment 
-
-## Cloning and Forking
 
 ### The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
@@ -147,6 +173,21 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 - Youtube workout videos - [Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2)
 - The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/) (add links note)
 
+    * Contact / Thank you page background - https://www.pexels.com/photo/women-exercising-866027/
+    * Landing Hero - https://www.pexels.com/photo/purple-dumbbells-in-hands-of-positive-sportswoman-4498294/
+    * Meals Hero - https://www.pexels.com/photo/assorted-sliced-fruits-in-white-ceramic-bowl-1092730/
+    * Workouts table background - https://www.pexels.com/photo/man-holding-barbell-1431282/
+    * Motivation Quote 1 - https://www.pexels.com/photo/man-in-blue-shorts-carrying-brown-exercise-equipments-116079/
+    * Motivation Quote 2 - https://www.pexels.com/photo/man-pushing-steel-frame-with-pile-of-weight-plates-1552102/
+    * Motivation Quote 3 - https://www.pexels.com/photo/woman-holding-rope-1552108/
+    * Motivation Quote 4 - https://www.pexels.com/photo/woman-doing-sit-ups-3076516/
+    * Motivation Quote 5 - https://www.pexels.com/photo/man-holding-dumbbell-3289711/
+    * Motivation Quote 6 - https://unsplash.com/photos/sHfo3WOgGTU
+    * Motivation Quote 7 - https://unsplash.com/photos/Y1drF0Y3Oe0
+    * Motivation Quote 8 - https://unsplash.com/photos/FbP1IvjV2ns
+    * Motivation Quote 9 - https://unsplash.com/photos/Kl2t5U6Gkm0
+
+
 # Aknowledgements
 
 ### Many thanks for their brilliant teachings to:
@@ -154,7 +195,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 - [Kevin Powell](https://www.youtube.com/kepowob) (grid and flex css layout)
 - [Code Institute](https://learn.codeinstitute.net/) (general)
 
-### I`d also like to thank my mentor, Chris Quinn, for his guidance! 
+## I would also like to thank my mentor, Chris Quinn, for his guidance! 
 
 # Sources
 
