@@ -101,8 +101,6 @@
 - I confirm that all hoverable and clickable elements work accordingly
 - I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. 
 
-<!-- <video src="assets/videos/responsive.mp4" width="500" autoplay muted loop controls="1"> -->
-
 ## Validator testing
 
 ### HTML 
@@ -118,6 +116,8 @@
 
 - No errors were found when passing through the official (Jigsaw) validator
     * https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feddiestn.github.io%2FArt-of-fitness%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css
+
+### Lighthouse testing
 
 # Bugs 
 
@@ -171,7 +171,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 ## Media
 
 - Youtube workout videos - [Athleanx](https://www.youtube.com/watch?v=zyvjscQVFv8&ab_channel=ATHLEAN-X%E2%84%A2)
-- The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/) (add links note)
+- The pictures used on this website were taken from the open source websites: [pexels](https://www.pexels.com/), [unsplash](https://unsplash.com/)
 
     * Contact / Thank you page background - https://www.pexels.com/photo/women-exercising-866027/
     * Landing Hero - https://www.pexels.com/photo/purple-dumbbells-in-hands-of-positive-sportswoman-4498294/
