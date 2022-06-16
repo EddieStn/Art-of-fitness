@@ -87,6 +87,7 @@
     - [GitPod](https://gitpod.io/)
     - [GitHub](https://github.com/)
     - [Image compressor](https://imagecompressor.com/)
+    - [gif converter](https://ezgif.com/)
 
 # Testing 
 
