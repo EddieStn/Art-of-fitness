@@ -110,7 +110,8 @@
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
 - I confirm that all hoverable and clickable elements work accordingly
 - I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. 
-![responsive_AdobeExpress (1)](https://user-images.githubusercontent.com/104385493/174162684-70f42217-37c3-459b-bcff-1b367d02c6e7.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/104385493/174165628-b4d6f5f3-59bf-4e47-828d-94fa6f96cdec.gif)
+
 
 ## Validator testing
 
@@ -132,17 +133,15 @@
 
 ### Mobile
 
-<img src="assets/images/index-mobile.png" width="300" height="250">
-<img src="assets/images/workout-mobile.png" width="300" height="250">
-<img src="assets/images/meals-mobile.png" width="300" height="250">
-<img src="assets/images/contact-mobile.png" width="300" height="250">
+<img src="assets/images/index-mobile.png" width="300" height="250"> <img src="assets/images/workout-mobile.png" width="300" height="250">
+
+<img src="assets/images/meals-mobile.png" width="300" height="250"> <img src="assets/images/contact-mobile.png" width="300" height="250">
 
 ### Desktop
 
-<img src="assets/images/index-desktop.png" width="300" height="250">
-<img src="assets/images/workouts-desktop.png" width="300" height="250">
-<img src="assets/images/meals-desktop.png" width="300" height="250">
-<img src="assets/images/contact-desktop.png" width="300" height="250">
+<img src="assets/images/index-desktop.png" width="300" height="250"> <img src="assets/images/workouts-desktop.png" width="300" height="250">
+
+<img src="assets/images/meals-desktop.png" width="300" height="250"> <img src="assets/images/contact-desktop.png" width="300" height="250">
 
 # Bugs 
 
