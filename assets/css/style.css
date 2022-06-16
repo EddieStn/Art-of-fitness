@@ -123,7 +123,7 @@ nav a {
 }
 
 .active {
-    border-bottom: 1px dotted;
+    border-bottom: 2px dotted;
 }
 
 /* ***************************** */
@@ -145,12 +145,10 @@ nav a {
     max-width: fit-content;
     align-self: center;
     text-align: center;
-    letter-spacing: 3px;
     text-transform: uppercase;
     padding: .5em;
     font-size: 1.3rem;
     font-weight: 900;
-    color: #680b0b;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: #333 0 5px 10px 2px;
     border-radius: 50px;
@@ -238,8 +236,7 @@ nav a {
     color: #000;
     align-self: end;
     font-weight: 900;
-    font-size: 1rem;
-    letter-spacing: .5px;
+    font-size: 1.1rem;
     margin: 1rem 1rem 4rem;
     padding: 0.5rem;
     box-shadow: .5em .5rem 1rem rgb(0 0 0 / 0.4);
@@ -279,11 +276,10 @@ nav a {
     cursor: pointer;
     padding: 1em 1em 1em .5em;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 1.15rem;
-    letter-spacing: 2px;
+    border-radius: 5px;
 }
   
 .open, .collapsible:hover {
@@ -302,7 +298,7 @@ nav a {
 .content p {
     margin-left: .5em;
     padding: .4em;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .collapsible:before {
@@ -503,7 +499,6 @@ footer a {
     text-align: left;
     padding-left: 1.5em;
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
 hr {
@@ -544,7 +539,6 @@ hr {
 
 .workouts-page h3 {
     margin: 2em;
-    /* text-decoration: underline; */
 }
 
 /* Box styling */
@@ -693,6 +687,7 @@ textarea {
 }
 
 @media screen and (min-width: 700px) {
+    
     .quote-content {
         margin: 1rem 1rem 8rem;
     }

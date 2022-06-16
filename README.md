@@ -1,6 +1,6 @@
 # Art of Fitness
 
-### Art of Fitness is a website designed to help everyone getting into fitenss. It explains some benefits of a fit life, workout tips as well as exercices, and dietary informations as well as some healthy meal examples.
+### Art of Fitness is a webpage designed to help, guide and motivate you in your fitness journey with accurate information, workout exercises and healthy meals.
 
 ### Open the live webpage through this [link](https://eddiestn.github.io/Art-of-fitness/index.html)
 
@@ -8,50 +8,53 @@
 
 # Features
 
+* For this project I chose a dark red color for most of my fonts in contrast with white and vice-versa, with font-family Lora for headers and Oxygen for general
+
 ## Navigation bar 
 
 - Available across all pages. 
 - Includes links between pages, the Logo is also a link directing to home page.
 - Turns into a drop-down hamburger menu for small screen sizes.
 
-<img src="assets/images/nav-bar-large.png">
-<img src="assets/images/nav-bar-small.png">
+<img src="assets/images/nav-bar-large.png" width="800">
 
-<img src="assets/images/drop-down-menu.png">
+<img src="assets/images/nav-bar-small.png" width="500">
+
+<img src="assets/images/drop-down-menu.png" width="300">
 
 ## Landing page
 
-### As you open the website you are greeted by an encouraging phrase with a fitness photograph behind it, followed by the table of contents with redirecting links across the page
+* As you open the website you are greeted by an encouraging phrase with a fitness photograph behind it, followed by the table of contents with redirecting links across the page
 
-<img src="assets/images/landing-page.png">
+<img src="assets/images/landing-page.png" width="800">
 
 ## Motivation section
 
-### Boost your confidence with some famous motivational quotes and photos of athletic people.
+* Boost your confidence with some famous motivational quotes and photos of athletic people.
 
-<img src="assets/images/motivation.png">
+<img src="assets/images/motivation.png" width="800">
 
 ## Benefits of Fitness and Workout tips sections
 
-### These 2 sections contain some benefits and tips and each category include expandable text giving more information on that specific subject.
+* These 2 sections contain some benefits and tips and each category include expandable text giving more information on that specific subject.
 
 <img src="assets/images/benefits-tips.png">
 
 ## Footer
 
-### The footer contains links to other social media platforms and it is accesible across all pages.
+* The footer contains links to other social media platforms and it is accesible across all pages.
 
 <img src="assets/images/footer.png">
 
 ## Workouts
 
-### The workouts page contains perfect workouts for each individual body area as well as full-body, which are easily accesible from the top of the page, in the table of contents.
+* The workouts page contains perfect workouts for each individual body area as well as full-body, which are easily accesible from the top of the page, in the table of contents.
 
-<img src="assets/images/workouts.png">
+<img src="assets/images/workouts.png"  width="800">
 
 ## Meals
 
-### The meals page is a guide with nutritional knowledge, best times/things to eat around workouts and healthy meals for breakfast/lunch/dinner and snacks in between.
+* The meals page is a guide with nutritional knowledge, best times/things to eat around workouts and healthy meals for breakfast/lunch/dinner and snacks in between.
 
 <img src="assets/images/meals-hero.png" width="800">
 <img src="assets/images/type-of-foods.png" width="800">
@@ -60,42 +63,49 @@
 
 ## Contact
 
-### The contact page allows people to easily send a message in case they struggle anywhere or they need more information on any topic.
+* The contact page allows people to easily send a message in case they struggle anywhere or they need more information on any topic.
 
-<img src="assets/images/contact.png">
+<img src="assets/images/contact.png"  width="800">
 
-### The submit button takes you to a "Thank you!" page, however, this being just for testing, the message is not sent.
+* The submit button takes you to a "Thank you!" page, however, this being just for testing, the message is not sent.
 
-<img src="assets/images/thanks.png">
+<img src="assets/images/thanks.png"  width="800">
 
 # Technologies used
 
-## Languages 
+* Languages 
 
-- HTML
-- CSS
-- JavaScript 
+    - HTML
+    - CSS
+    - JavaScript 
 
-## Frameworks and Libraries 
+* Frameworks and Libraries 
 
-- [FontAwesome](https://fontawesome.com/)
-- [Google fonts](https://fonts.google.com/)
-- [Am I Responsive](https://ui.dev/amiresponsive)
-- [GitPod](https://gitpod.io/)
-- [GitHub](https://github.com/)
-- [Image compressor](https://imagecompressor.com/)
+    - [FontAwesome](https://fontawesome.com/)
+    - [Google fonts](https://fonts.google.com/)
+    - [Am I Responsive](https://ui.dev/amiresponsive)
+    - [GitPod](https://gitpod.io/)
+    - [GitHub](https://github.com/)
+    - [Image compressor](https://imagecompressor.com/)
 
 # Testing 
 
-- I tested and confirmed that this page works in different browsers: Chrome, Firefox, Microsoft Edge, Safari.
+## I tested and confirmed that this page works in different browsers: Firefox, Microsoft Edge, Chrome, Safari.
+* Firefox
+    
+<img src="assets/images/firefox.png" width="600">
 
-<img src="assets/images/chrome.png" width="800">
+* Edge
+    
+<img src="assets/images/edge.png" width="600">
 
-<img src="assets/images/firefox.png" width="800">
+* Chrome
+    
+<img src="assets/images/chrome.png" width="600">
 
-<img src="assets/images/edge.png" width="800">
-
-<img src="assets/images/safari.png" width="400">
+* Safari
+    
+<img src="assets/images/safari.png" width="300">
 
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
 - I confirm that all hoverable and clickable elements work accordingly
@@ -119,13 +129,32 @@
 
 ### Lighthouse testing
 
+### Mobile
+
+<img src="assets/images/index-mobile.png" width="300" height="250">
+<img src="assets/images/workout-mobile.png" width="300" height="250">
+<img src="assets/images/meals-mobile.png" width="300" height="250">
+<img src="assets/images/contact-mobile.png" width="300" height="250">
+
+### Desktop
+
+<img src="assets/images/index-desktop.png" width="300" height="250">
+<img src="assets/images/workouts-desktop.png" width="300" height="250">
+<img src="assets/images/meals-desktop.png" width="300" height="250">
+<img src="assets/images/contact-desktop.png" width="300" height="250">
+
 # Bugs 
 
-### The project wasn`t responsive across all devices
+* The project wasn`t responsive across all devices
 
-- The solution and easier approach was using grid and flex css instead of floats
-- Began mobile styling first and added media querries for bigger screens after
-- Added hamburger menu for small screens to access other pages
+    * The solution and easier approach was using grid and flex css instead of floats;
+    * Began mobile styling first and added media querries for bigger screens after;
+    * Added hamburger menu for small screens to access other pages;
+
+* Website performace was poor, to fix:
+
+    * I compressed images across all pages to lower their size; 
+    * I forwent the use of iframes and used links to youtube videos instead for workouts sections;
 
 # Local development
 
