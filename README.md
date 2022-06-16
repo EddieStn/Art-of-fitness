@@ -110,6 +110,7 @@
 - I tested and confirmed that the contact form works properly and the submit button is redirrecting you to a dummy "Thank you!" page.
 - I confirm that all hoverable and clickable elements work accordingly
 - I confirm that this project is responsive and functions on all screen sizes, used chrome and firefox devtools for testing. 
+![responsive_AdobeExpress (1)](https://user-images.githubusercontent.com/104385493/174162684-70f42217-37c3-459b-bcff-1b367d02c6e7.gif)
 
 ## Validator testing
 
