@@ -13,7 +13,7 @@
 ## Navigation bar 
 
 - Available across all pages. 
-- Includes links between pages, the Logo is also a link directing to home page.
+- Includes links between pages, the Logo is also a link directing to the home page.
 - Turns into a drop-down hamburger menu for small screen sizes.
 
 <img src="assets/images/nav-bar-large.png" width="800">
@@ -42,7 +42,7 @@
 
 ## Footer
 
-* The footer contains links to other social media platforms and it is accesible across all pages.
+* The footer contains links to other social media platforms and it is accessible across all pages.
 
 <img src="assets/images/footer.png">
 
@@ -149,7 +149,7 @@
 * The project wasn`t responsive across all devices
 
     * The solution and easier approach was using grid and flex css instead of floats;
-    * Began mobile styling first and added media querries for bigger screens after;
+    * Began mobile styling first and added media queries for bigger screens after;
     * Added hamburger menu for small screens to access other pages;
 
 * Website performace was poor, to fix:
@@ -192,7 +192,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
 
 ## Content
 
-- Fitess quotes - [Parade.com](https://parade.com/1045407/marynliles/fitness-quotes/)
+- Fitness quotes - [Parade.com](https://parade.com/1045407/marynliles/fitness-quotes/)
 - Nutrirional information and workouts- [Athleanx](https://athleanx.com/)
 - Navbar styling inspired from Kevin Powell's [youtube video](https://www.youtube.com/watch?v=8QKOaTYvYUA&ab_channel=KevinPowell)
 - Icons taken from [FontAwesome](https://fontawesome.com/)
@@ -218,7 +218,7 @@ The live link can be found here - https://eddiestn.github.io/Art-of-fitness/inde
     * Motivation Quote 9 - https://unsplash.com/photos/Kl2t5U6Gkm0
 
 
-# Aknowledgements
+# Acknowledgements
 
 ### Many thanks for their brilliant teachings to:
 
