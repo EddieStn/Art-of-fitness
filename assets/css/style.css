@@ -375,6 +375,79 @@ footer a {
 
 
 /* ***************************** */
+/* Workouts page styles start here  */
+/* ***************************** */
+
+
+
+
+.workouts-page {
+    grid-template:
+        "header header header" 5em
+        "table table table" 25em
+        ". box ." auto
+        ". perfect-workouts ." auto
+        "footer footer footer" 6em
+        / 1fr minmax(10em, 25fr) 1fr;
+    gap: 2em;
+}
+
+.workouts-page .table {
+    margin: 2em;
+    background: url(../images/man-curl.jpg) no-repeat center center / cover;
+}
+
+.workouts-page p,
+.workouts-page ol {
+    padding-inline: 2em;
+}
+
+.workouts-page h3 {
+    margin: 2em;
+}
+
+/* Box styling */
+
+.box {
+    grid-area: box;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: #333 0 5px 10px 5px;
+}
+
+.box p {
+    padding: 1em;
+}
+
+/* Workouts styling */
+
+.perfect-workouts {
+    grid-area: perfect-workouts;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: #333 0 5px 10px 5px;
+}
+
+.title {
+    font-size: 2rem;
+    margin: .7em;
+    padding: .67em;
+    border-radius: 50%;
+    box-shadow: #680b0b 0 5px 10px 2px;
+}
+
+.body-area {
+    margin: 1em;
+    font-size: 1.2rem;
+    padding: .5em;
+    border-radius: 50%;
+    box-shadow: #680b0b 0 3px 5px 2px;
+}
+
+
+
+
+/* ***************************** */
 /* Meals page styling starts here */
 /* ***************************** */
 
@@ -510,78 +583,6 @@ hr {
     border-bottom: 3px solid #c20d0d;;
 }
 
-
-
-
-/* ***************************** */
-/* Workouts page styles start here  */
-/* ***************************** */
-
-
-
-
-.workouts-page {
-    grid-template:
-        "header header header" 5em
-        "table table table" 25em
-        ". box ." auto
-        ". perfect-workouts ." auto
-        "footer footer footer" 6em
-        / 1fr minmax(10em, 25fr) 1fr;
-    gap: 2em;
-}
-
-.workouts-page .table {
-    margin: 2em;
-    background: url(../images/man-curl.jpg) no-repeat center center / cover;
-}
-
-.workouts-page p,
-.workouts-page ol {
-    padding-inline: 2em;
-}
-
-.workouts-page h3 {
-    margin: 2em;
-}
-
-/* Box styling */
-
-.box {
-    grid-area: box;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: #333 0 5px 10px 5px;
-}
-
-.box p {
-    padding: 1em;
-}
-
-/* Workouts styling */
-
-.perfect-workouts {
-    grid-area: perfect-workouts;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: #333 0 5px 10px 5px;
-}
-
-.title {
-    font-size: 2rem;
-    margin: .7em;
-    padding: .67em;
-    border-radius: 50%;
-    box-shadow: #680b0b 0 5px 10px 2px;
-}
-
-.body-area {
-    margin: 1em;
-    font-size: 1.2rem;
-    padding: .5em;
-    border-radius: 50%;
-    box-shadow: #680b0b 0 3px 5px 2px;
-}
 
 
 
