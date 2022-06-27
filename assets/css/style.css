@@ -462,7 +462,7 @@ footer a {
         ". information ." auto
         ". recipes ." auto
         "footer footer footer" 6em
-        / 1fr minmax(10em, 5fr) 1fr;
+        / 1fr minmax(10em, 15fr) 1fr;
 }
 
 .meals-page p {
@@ -572,9 +572,12 @@ footer a {
     padding-inline: 2em;
 }
 
+.section-meals h1 {
+    padding: .5em;
+}
+
 .section-meals h2 {
-    text-align: left;
-    padding-left: 1.5em;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -699,6 +702,15 @@ textarea {
 
     .collapsible {
         font-size: 1.3rem;
+    }
+
+    .meals-page {
+        grid-template-columns: 1fr minmax(10em, 5fr) 1fr;
+    }
+
+    .section-meals h2 {
+        text-align: left;
+        padding-left: 1.5em;
     }
 }
 
