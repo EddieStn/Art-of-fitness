@@ -182,8 +182,9 @@
 # Deployment 
 
 ### The site was deployed to GitHub pages. The steps to deploy are as follows:
-- In the GitHub repository, navigate to the Settings tab
-- From the source section drop-down menu, select the Master Branch
+- In the GitHub repository, navigate to the **Settings** tab
+- From the *Code and automation* click on **Pages**
+- From the *source* section drop-down menu, select the **Master Branch** and click **Save**
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found here - https://eddiestn.github.io/Art-of-fitness/index.html
